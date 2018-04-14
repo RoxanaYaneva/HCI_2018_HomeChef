@@ -24,7 +24,7 @@ p {
 
 legend {
 	font-size: 30px;
-	color: black;
+	color: #45a316;
 	font-weight: bold;
 	margin: 10px 0;
 }
@@ -42,6 +42,8 @@ fieldset {
 
 label {
     width: 350px;
+	font-family: 'Hoefler Text', Georgia, serif;
+	color: black;
     text-align: right;
 }
 

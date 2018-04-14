@@ -40,6 +40,30 @@ a {
 
 #indent { text-indent: 47%; }
 
+legend {
+	font-size: 30px;
+	color: #45a316;
+	font-family: 'Hoefler Text', Georgia, serif;
+	font-weight: bold;
+	margin: 10px 0;
+}
+
+label {
+    width: 350px;
+	font-family: 'Hoefler Text', Georgia, serif;
+    text-align: right;
+}
+
+fieldset {
+	margin: 20px auto;
+	width: 700px;
+	height: 400px;
+	clear: both;
+	border-radius: 10px;
+	border: 4px solid black;
+	background: rgba(255, 255, 255, 0.5);
+	font-size: 30px;
+}
 
 button{
     width: 449px;

@@ -19,12 +19,11 @@ p {
 	background: rgba(255, 255, 255, 0.5);
 }
 
-.result {
-	font-family: Arial;
-	color: black;
+
+.top_layer{
+	height:400px;
+	padding:20px 40px;
 }
-
-
 
 li { height:30%;
 	 padding:10px;
@@ -51,39 +50,49 @@ textarea {  width: 100%;
 			box-sizing: border-box;
 			border-radius: 8px;}
 
-.italic { font-style: italic; }
-
-label {
-    width: 350px;
-    text-align: right;
-}
-
-.input {
-	border-radius: 5px;
-	width: 100%;
-	height: 22px;
-	clear: both;
-}
-
-
 
 .container_title {
     float:left;
-	padding:30px 20px 0px 50px	;
+	padding:30px 20px 10px 50px	;
 }
 
+
+
 ul.recipe_details { 
+	float:left;
 	display:inline-block;
-	padding:80px 100px;
+	padding:40px 20px;
 	list-style-type: none;
 	font-size: 20px;
 	text-transform: uppercase;
-	height:200px;	}
+	height:200px;
+}
 
+.container_icon{
+	float:left;
+	position: relative;
+    text-align: center;
+    font-family: 'Hoefler Text', Georgia, serif;
+	color: #45a316;
+	font-size:22px;
+}
+
+.all_icons{
+	float:left;
+	padding:80px 30px;
+	height:200px;
+	
+}
+
+img.icon{
+	padding:3px 3px;
+	width:90px;
+	height:90px;
+}
+	
 img {
 	width:400px;
 	height:300px;
-	
 }
 	
 .title {
@@ -133,13 +142,12 @@ img {
 
 ul.ingredients {
 	font-size: 20px;
-	font-family: 'Hoefler Text', Georgia, serif;
-  
+	font-family: 'Hoefler Text', Georgia, serif; 
 }
 
 
 
-ol.method {
+.method {
 	font-size: 20px;
 	font-family: 'Hoefler Text', Georgia, serif;
 }
