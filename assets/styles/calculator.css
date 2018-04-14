@@ -1,5 +1,3 @@
-body { background: url("../img/background.jpg"); }
-
 p, .result, fieldset {
 	background: rgba(255, 255, 255, 0.5);
 	width: 90%;

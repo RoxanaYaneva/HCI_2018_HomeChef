@@ -5,8 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Регистрирай се</title>
-
+    <title>Влез</title>
     <link rel="stylesheet" type="text/css" href="../assets/styles/reset.css">
     <link rel="stylesheet" type="text/css" href="../assets/styles/styles.css">
     <link rel="stylesheet" type="text/css" href="../assets/styles/register.css">
@@ -14,7 +13,7 @@
 
 <body>
     <main class='container'>
-        <div id='registerDiv'>
+        <div id='loginDiv'>
             <div id='buttons'>
                 <a href="login.html">
                     <button class='loginButton'>ВХОД</button>
@@ -24,20 +23,21 @@
                 </a>
             </div>
             <form action="">
-                <input id='regUser' type="text" placeholder="Потребителско име" />
+                <input id='user' type="text" placeholder="Потребителско име" />
                 <br/>
-                <input id='email' type="text" placeholder="Имейл адрес" />
-                <br/>
-                <input id='regPass' type="password" placeholder="Парола" />
+                <input id='pass' type="password" placeholder="Парола" />
                 <br/>
             </form>
-            <a href="login.html">
-                    <button id="register">РЕГИСТРИРАЙ СЕ</button>
+            <a href="home.html">
+                    <button id="logIn">ВХОД</button>
+                </a>
+                <hr/>
+                <a href="guestHome.html" id='guest'>
+                    <span>Влез като гост</span>
                 </a>
         </div>
 
     </main>
-
 
 </body>
 

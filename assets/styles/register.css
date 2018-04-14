@@ -5,16 +5,13 @@
 	top:148px;
 }
 
-#registerDiv form {
-    display: none;
-}
 
 #loginDiv, #registerDiv{
     display: inline-block;
     width: 90%;
     position: relative;
     top: -30px;
-	left: -10px;
+    left: -10px;
 }
 
 #registerDiv input, #loginDiv input {
@@ -27,7 +24,7 @@
     margin: 1em;
 }
 
-#loginButton, #regButton {
+.loginButton, .regButton {
 	position: relative;
 	cursor: pointer;
     display: inline-block;
@@ -52,4 +49,9 @@ hr {
 	position: relative;
     top: 160px;
     left: 59px;
+}
+
+#content>form>h1{
+    position: relative;
+    top:10px;
 }

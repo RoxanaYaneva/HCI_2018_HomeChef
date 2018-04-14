@@ -109,3 +109,20 @@ button:active {
 }
 
 
+#logout{
+	width: 925px;
+    height: 55px;
+}
+
+
+#choose{
+font-size:3em;
+color: #189210;
+margin: auto;
+}
+
+
+
+#guestDiv, #userDiv{
+	display: none;
+}

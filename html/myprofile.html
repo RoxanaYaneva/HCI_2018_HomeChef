@@ -4,12 +4,62 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Моят профиле</title>
+    <title>Моят профил</title>
     <link rel="stylesheet" type="text/css" href="../assets/styles/reset.css">
     <link rel="stylesheet" type="text/css" href="../assets/styles/styles.css">
-    <link rel="stylesheet" type="text/css" href="../assets/styles/myprofile.css">
+    <link rel="stylesheet" type="text/css" href="../assets/styles/turnAppProfile.css">
+
+    <script src="../assets/js/profileController.js"></script>
 </head>
 <body>
-    
+    <main class='container'>
+        <a href="add_recipe.html"><button class='uploadRecipe'>Качи твоя рецепта </button></a>
+        <button class='favourites'>Виж любими рецепти</button>
+        <button class='competitions'>Спечелени конкурси</button>
+        <button class='rating'>Рейтинг</button>
+        <button class='personalInfo'>Лични данни</button>
+      
+     
+        <section id='content'>
+
+        </section>
+    </main>
+
+
+    <div class='favourites'>
+            <h1>Все още нямате любими рецепти!</h1>
+            <a href="filter.html"><button>Намери рецепта</button></a>
+    </div>
+    <div class='competitions'>
+        <h1>Все още нямате спечелени конкурси!</h1>
+        <a href="competitions.html"><button>Намери конкурс</button></a>
+    </div>
+    <div class='rating'>
+
+        <h1>Вашият рейтинг е: </h1>
+        <button disabled>0.0%</button>
+
+    </div>
+    <div class='personalInfo'>
+        <form action="">
+            <h1>Промени личните данни: </h1>
+            <input type="text" placeholder="Избери и качи своя снимка..."> <button id='upload' class='info'>Качи</button>
+            <br>
+            <label> Промени своето име:
+                <br>
+                <input type="text" placeholder="Име">
+                <br>
+                <input type="text" placeholder="Фамилия">
+            </label>
+            <br>
+            <button class='info' id='save'>Запази</button>
+        </form>
+    </div>
+
+
+
+
+
+
 </body>
 </html>
