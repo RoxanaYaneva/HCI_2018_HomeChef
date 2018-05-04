@@ -1,67 +1,50 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title> Филтър </title>
+	<title>Начална страница</title>
 	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" type="text/css" href="../assets/styles/filter.css">
+	<link rel="stylesheet" type="text/css" href="../assets/styles/styles.css">
+	<link rel="stylesheet" type="text/css" href="../assets/styles/buttons.css">
 </head>
 <body>
-	<form method="POST" action="">
-		<fieldset>
-			<legend> Потърсете рецепта </legend>
-			<label>Търси</label>
-           <input class="input" name="search" type="text" placeholder="Име на ястие, продукти">
-        
-			<label>Вид ястие</label>
-			<select class="input" name="dish_kind" id="dish_kind" placeholder="Избери">
+	<header>
+		<nav id="back-btn"><a href="../html/homeScreen.html"> &#11176;</a></nav>
+	</header>
+	<main class="container">
+		<form method="POST" action="../html/recipe.html">
+			<fieldset>
+				<legend>Потърсете рецепта</legend>
+				<img id="icon" src="../assets/images/recipe.png">
+				<label for="search">Търси</label>
+	           	<input class="input" name="search" type="text" placeholder="Име на ястие, продукти">
+				<label for="dish_kind">Вид ястие</label>
+				<select class="input" name="dish_kind" id="dish_kind" placeholder="Избери">
 					<option value="main_dish">Основни ястия</option>
 					<option value="soups">Супи</option>
 					<option value="salads">Салати</option>
 					<option value="appetizers">Предястия</option>
 					<option value="pastries">Тестени</option>
-					<option value="dessert">Десерти</option>
+					<option value="desserts">Десерти</option>
 					<option value="other">Други</option>
-			</select>
-			<label> Време за приготвяне</label>
-			<select class="input" name="time" id="time" placeholder="Избери">
-				<option value="15min"> 15 мин</option>
-				<option value="30min"> 30 мин</option>
-				<option value="45min"> 45 мин</option>
-				<option value="60+min"> 60+ мин</option>
-			</select>	
-			<label> Сложност </label>
-			<select class="input" name="comlexity" id="complexity" placeholder="Избери">
-				<option value="easy"> лесно </option>
-				<option value="normal"> средно </option>
-				<option value="hard"> трудно </option>
-			</select>	
-				
-			<input class="add" type="submit" name="search" value="Търси">				
-			
-				
-		</fieldset>	
-	</form>
-<!-- 	<div class="container">
-		<img src="../assets/img/main_dish.jpg" alt="Основни ястия">
-		<div class="top-left">Основни ястия</div>
-	</div>
-	<div class="container">
-		<img src="../assets/img/appetizer.jpg" alt="Предястия">
-		<div class="bottom-right">Предястия</div>
-	</div>
-	<div class="container">
-		<img src="../assets/img/salad.jpg" alt="Салати" >
-		<div class="bottom-right">Салати</div>
-	</div>
-	<div class="container">
-		<img src="../assets/img/dessert.jpg" alt="Десерти" >
-		<div class="bottom-right">Десерти</div>
-	</div>
-	<div class="container">
-		<img src="../assets/img/pastries.jpg" alt="Тестени" >
-		<div class="top-left">Тестени</div>
-	</div> -->
-	
-	
+				</select>
+				<label for="time">Време за приготвяне</label>
+				<select class="input" name="time" id="time" placeholder="Избери">
+					<option value="15min"> 15 мин</option>
+					<option value="30min"> 30 мин</option>
+					<option value="45min"> 45 мин</option>
+					<option value="60+min"> 60+ мин</option>
+				</select>	
+				<label for="complexity">Сложност</label>
+				<select class="input" name="comlexity" id="complexity" placeholder="Избери">
+					<option value="easy"> лесно</option>
+					<option value="normal"> средно</option>
+					<option value="hard"> трудно</option>
+				</select>	
+				<input class="button" type="submit" name="search" value="Търси">					
+			</fieldset>	
+		</form>
+	</main>	
 </body>
 </html>

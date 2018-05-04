@@ -1,128 +1,30 @@
-
 body {
-    width: 100%;
-	background: url("../img/background.jpg");
+	height: 100%;
+	width: 100%;
+	margin: 0;
+	background: url("../images/background.jpg") repeat;
+	font-family: Arial, Helvetica, sans-serif;
 }
 
-* {
-    box-sizing: border-box;
-}
-
-a {
-	color:black;
-    text-decoration: none;
-}
-
-.container {
-	width: 1000px;
-	border: 1px ridge black;
-	margin: 50px auto;
-	border-radius: 15px;
-	height: 650px;
-	background: rgba(255, 255, 255, 0.5);
-}	
-
-#logo {
-    position: relative;
-    width: 400px;
-    top: 10px;
-    left: 320px;
-}
-
-.container p, span {
-	font-family: 'Hoefler Text', Georgia, serif;
-	font-style: italic;
-	font-size: 2em;
+header nav {
 	margin: 0;
 	padding: 0;
-	text-indent: 35%;
 }
 
-#indent { text-indent: 47%; }
-
-legend {
-	font-size: 30px;
-	color: #45a316;
-	font-family: 'Hoefler Text', Georgia, serif;
-	font-weight: bold;
-	margin: 10px 0;
-}
-
-label {
-    width: 350px;
-	font-family: 'Hoefler Text', Georgia, serif;
-    text-align: right;
-}
-
-fieldset {
-	margin: 20px auto;
-	width: 700px;
-	height: 400px;
-	clear: both;
-	border-radius: 10px;
-	border: 4px solid black;
-	background: rgba(255, 255, 255, 0.5);
-	font-size: 30px;
-}
-
-button{
-    width: 449px;
-    height: 55px;
-    border-radius: 10px;
-    cursor: pointer;
-    margin: 1.5em;
-	font-size: 1.5em;
-	color:white;
-
-
-	text-shadow: 0 1px #154c86;
-	background-color: #247edd;
-	background-clip: padding-box;
-	background-color: #1ca913;
-	border: 1px solid green;
-	border-radius: 5px;
-	box-shadow: inset 0 1px rgba(255, 255, 255, 0.4), 0 1px 2px rgba(0, 0, 0, 0.2);
-	background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0) 50%, rgba(0, 0, 0, 0.12) 51%, rgba(0, 0, 0, 0.04));
-}
-
-button:before {
-	border-radius: 10px;
+#back-btn {
+	position: fixed;
+	top: 0;
+	width: 50px;
+	height: auto;
+	font-size: 250%;
+	border: none;
 	background: transparent;
-	box-shadow: inset 0 0 38px rgba(255, 255, 255, 0.5);
 }
 
-button:active:before { box-shadow: inset 0 0 96px rgba(0, 0, 0, 0.2); }
+#back-btn a { color: green; }
 
-button:hover { background-color: #159b0d; }
+* { box-sizing: border-box; }
 
-button:active {
-	text-shadow: 0 -1px #0d4d09;
-	background: #189210;
-	border-color: #093606 #0d4d09 #147b0e;
-	background-image: linear-gradient(to bottom, #126d0c, #20c016);
-}
+a { text-decoration: none; }
 
-#goAhead{
-	position: relative;
-	left: 250px;
-	
-}
-
-
-#logout{
-	width: 925px;
-    height: 55px;
-}
-
-
-#choose{
-font-size:3em;
-color: #189210;
-margin: auto;
-}
-
-
-
-#guestDiv, #userDiv{
-	display: none;
-}
+a:active { color: white; }

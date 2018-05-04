@@ -1,0 +1,81 @@
+.container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	background: rgba(255, 255, 255, 0.5);
+	width: 80%;
+	height: 550px;
+	border-radius: 15px;
+	margin: 40px auto 0;
+}
+
+nav {
+	display: block;
+	width: 90%;
+	margin: 30px auto 0;
+}
+
+#logo {
+	margin: 40px auto;
+	width: 30%;
+	height: auto;
+}
+
+#left-col {
+	display: inline-block;
+	float: left;
+	width: 47%;
+}
+
+#right-col {
+	display: inline-block;
+	float: right;
+	width: 47%;
+}
+
+.icon-btn {
+	margin: 10px;
+}
+
+.icon {
+	width: 40px;
+	height: auto;
+	display: block;
+	float: left;
+	margin: 10px 7px;
+}
+
+.button {
+	line-height: 40px;
+	display: block;
+	float: right;
+	width: 85%;
+	font-size: 120%;
+	text-align: center;
+	vertical-align: middle;
+	margin: 10px auto;
+}
+
+
+@media all and (max-width: 600px) {
+	#logo {
+		width: 80%;
+		height: auto;
+	}	
+
+
+	#left-col, #right-col {
+		display: block;
+		width: 100%;
+	}
+
+	.button {
+		line-height: 120%;
+		margin: 1%;
+	}
+
+	.icon {
+		width: 9%;
+		margin: 0;
+	}
+}

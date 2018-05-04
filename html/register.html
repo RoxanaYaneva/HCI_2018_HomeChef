@@ -1,44 +1,29 @@
 <!DOCTYPE html>
-<html lang="bg">
-
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Регистрирай се</title>
-
-    <link rel="stylesheet" type="text/css" href="../assets/styles/reset.css">
-    <link rel="stylesheet" type="text/css" href="../assets/styles/styles.css">
-    <link rel="stylesheet" type="text/css" href="../assets/styles/register.css">
+	<title>Регистрация</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="../assets/styles/login.css">
+	<link rel="stylesheet" type="text/css" href="../assets/styles/styles.css">
+	<link rel="stylesheet" type="text/css" href="../assets/styles/buttons.css">
 </head>
-
 <body>
-    <main class='container'>
-        <div id='registerDiv'>
-            <div id='buttons'>
-                <a href="login.html">
-                    <button class='loginButton'>ВХОД</button>
-                </a>
-                <a href="register.html">
-                    <button class='regButton'>РЕГИСТРИРАЙ СЕ</button>
-                </a>
-            </div>
-            <form action="">
-                <input id='regUser' type="text" placeholder="Потребителско име" />
-                <br/>
-                <input id='email' type="text" placeholder="Имейл адрес" />
-                <br/>
-                <input id='regPass' type="password" placeholder="Парола" />
-                <br/>
+	<main class="container">
+		<div id="registerDiv">
+            <nav>
+                <a class="button login transp" href="login.html">Вход</a>
+                <a class="button register transp" href="register.html">Регистрирай се</a>
+            </nav>
+            <form method="POST" action="login.html">
+                <input id="username" name="username" type="text" placeholder="Потребителско име" required="required">
+                <input id="email" name="email" type="text" placeholder="E-mail" required="required">
+                <input id="passwd" name="passwd" type="password" placeholder="Парола" required="required">
+                <input class="button" type="submit" name="submit" value="Регистрирай се">
             </form>
-            <a href="login.html">
-                    <button id="register">РЕГИСТРИРАЙ СЕ</button>
-                </a>
+	            <a id="guest" href="">Влез като гост</a>
+	        </nav>
         </div>
-
-    </main>
-
-
+	</main>
 </body>
-
 </html>

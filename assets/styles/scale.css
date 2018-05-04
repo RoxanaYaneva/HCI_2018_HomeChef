@@ -1,20 +1,18 @@
-body { 	background: url("../img/background.jpg"); }
-
-p, .result, .scale {
+p, #result, .scale {
 	background: rgba(255, 255, 255, 0.5);
 	width: 90%;
-	margin: 2% auto; 
+	margin: 10px auto; 
 	border-radius: 10px;
 	text-align: center;
 }
 
-p, .result {
+p, #result {
 	border: 2px solid black;
 	font-family: 'Hoefler Text', Georgia, serif;
 	color: #45a316;
 	text-shadow: 0 1px #154c86;
 	font-size: 240%;
-	padding: 1%;
+	padding: 10px;
 }
 
 .scale {
@@ -27,9 +25,14 @@ p, .result {
 }
 
 #text {
+	font-size: 145%;
 	opacity: 0.5;
 	vertical-align: middle;
-	line-height: 600%;
+	line-height: 700%;
 }
 
-.result { color: black; }
+#result { color: black; }
+
+@media all and (max-width: 800px) {
+	p { font-size: 170%; }
+}

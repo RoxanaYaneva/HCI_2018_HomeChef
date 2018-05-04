@@ -1,0 +1,124 @@
+.container {
+	display: block;
+	width: 80%;
+	height: 800px;
+	margin: 0 auto;
+	background: rgba(255, 255, 255, 0.7);
+}
+
+header { 
+	display: block;
+	width: 80%;
+	margin: 0 auto;
+	background: rgb(210, 255, 183);
+}
+
+header ul {
+	justify-content: center;
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+	display: flex;
+	flex-direction: row;
+	vertical-align: middle;
+}
+
+header ul li {
+	flex-grow: 1;
+	padding: 0 10px;
+	line-height: 50px;
+	vertical-align: middle;
+	text-align: center;
+	border: 0.5px solid white;
+}
+
+a {
+	color: black;
+	text-shadow: 1px 1px white;
+}
+
+.left {
+	width: 30%;
+	float: left;
+}
+
+.right {
+	width: 70%;
+	float: right;
+}
+
+.left p {
+	font-size: 90%; 
+	display: block;
+	padding: 5px 0;
+}
+
+.left img {
+	display: block;
+	width: 65%;
+	margin: 20px;
+}
+
+#user-info { padding: 0 20px; }
+
+.myRecipes, .favourites { 
+	display: table;
+	margin-bottom: 10px;
+}
+
+article {
+	display: table-cell;
+	margin: 0 10px;
+}
+
+.right img {
+	width: auto;
+	height: 140px;
+	margin: 10px 5px;
+}
+
+.more {
+	float: right;
+	margin-right: 40px;
+	text-decoration: underline;
+}
+
+h2 {
+	border-bottom: 2px ridge white;
+	padding: 10px 0;
+	width: 97%;
+}
+
+h2:nth-of-type(2) { margin-top: 50px; }
+
+@media all and (max-width: 1250px) {
+	header { width: 90%; }
+
+	.container { width: 90%; }
+}
+
+@media all and (max-width: 1140px) {
+	header {
+		width: 100%;
+		font-size: 80%;
+	}
+
+	header ul li { line-height: 20px; }
+
+	.container { width: 100%; }
+	
+	.myRecipes, .favourites { 
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+	}
+
+	article { display: block; }
+
+	.left p { font-size: 80%; }
+
+	.right img {
+		width: 215px;
+		height: 180px;
+	}
+}

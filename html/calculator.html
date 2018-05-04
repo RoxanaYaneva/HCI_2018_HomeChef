@@ -1,30 +1,28 @@
 <!DOCTYPE html>
-<html lang="bg">
-
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Калкулатор на калории</title>
-    <link rel="stylesheet" type="text/css" href="../assets/styles/reset.css">
-    <link rel="stylesheet" type="text/css" href="../assets/styles/styles.css">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="../assets/styles/calculator.css">
+    <link rel="stylesheet" type="text/css" href="../assets/styles/styles.css">
     <link rel="stylesheet" type="text/css" href="../assets/styles/buttons.css">
 </head>
-
 <body>
-    <p>Калкулатор за калории</p>
-    <form method="POST" action="">
-        <fieldset>
-            <legend> Въведете продуктите </legend>
-            <label> Продукт:
-                <input class="input" name="product" required> </label>
-            <label> Количество (в грама):
-                <input class="input" name="quantity" required> </label>
-            <input class="button style" type="submit" value="Add">
-        </fieldset>
-    </form>
-    <p class="result"> Общо калории: 0 cal </p>
+    <header>
+        <nav id="back-btn"><a href="../html/homeScreen.html"> &#11176;</a></nav>
+    </header>
+    <main class="container">
+        <p>Калкулатор на калории</p>
+        <form method="POST" action="">
+            <fieldset>
+                <legend>Въведете продуктите</legend>
+                <label>Продукт: <input class="input" name="product" required> </label>
+                <label>Количество (в грама): <input class="input" name="quantity" required> </label>
+                <input class="button" type="submit" value="Добави">
+            </fieldset>
+        </form>
+        <p id="result">Общо калории: 0 cal</p>
+    </main>
 </body>
-
 </html>

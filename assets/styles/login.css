@@ -1,0 +1,87 @@
+.container {
+    width: 80%;
+    height: 540px;
+    margin: 40px auto 0;
+    background: rgba(255, 255, 255, 0.5);
+    border: 1px solid black;
+    border-radius: 10px;
+}
+
+#loginDiv, #registerDiv {
+    display: block;
+    width: 45%;
+    margin: 50px auto 20px;
+    text-align: center;
+}
+
+.button {
+    display: block;
+    height: 50px;
+    padding: 0;
+    line-height: 50px;
+    vertical-align: middle;
+    text-transform: uppercase;
+    font-size: 100%;
+    font-weight: bold;
+}
+
+.button.login, .button.register { width: 48%; }
+
+.button.login { float: left; }
+
+.button.register { float: right; }
+
+.button.login.transp, .button.register.transp {
+    background-color: rgba(106, 212, 106, 0.5);
+}
+
+#loginDiv input, #registerDiv input {
+    width: 100%;
+    height: 50px;
+    padding: 0 10px;
+    margin-top: 20px;
+    font-size: 110%;
+}
+
+#loginDiv input:first-child, #registerDiv input:first-child { margin-top: 70px; }
+
+#forget {
+    display: block;
+    margin-top: 15px;
+    color: green;
+}
+
+#guest {
+    display: block;
+    margin: 30px auto 0;
+    padding: 20px;
+    border-top: 4px ridge white !important;
+    font-family: 'Hoefler Text', Georgia, serif;
+    font-style: italic;
+    color: black;
+    font-size: 170%;
+}
+
+@media all and (max-width: 1000px) {
+    #loginDiv, #registerDiv { width: 60%; }
+}
+
+@media all and (max-width: 950px) {
+    #loginDiv, #registerDiv { width: 70%; }
+}
+
+
+@media all and (max-width: 850px) {
+    #loginDiv, #registerDiv { width: 80%; }
+}
+
+@media all and (max-width: 600px) {
+    #loginDiv, #registerDiv { 
+        width: 90%; 
+        font-size: 80%; 
+    }
+
+    #forget {
+        font-size: 120%;
+    }
+}

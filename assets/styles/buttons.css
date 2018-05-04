@@ -1,8 +1,9 @@
-.button.style {
+.button {
+	border-radius: 10px;
 	color: white;
-	text-align: center;
-	text-decoration: none;
 	text-shadow: 0 1px #154c86;
+	cursor: pointer;
+
 	background-color: #247edd;
 	background-clip: padding-box;
 	background-color: #1ca913;
@@ -12,17 +13,17 @@
 	background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0) 50%, rgba(0, 0, 0, 0.12) 51%, rgba(0, 0, 0, 0.04));
 }
 
-.button.style:before {
+.button:before {
 	border-radius: 10px;
 	background: transparent;
 	box-shadow: inset 0 0 38px rgba(255, 255, 255, 0.5);
 }
 
-.button.style:active:before { box-shadow: inset 0 0 96px rgba(0, 0, 0, 0.2); }
+.button:active:before { box-shadow: inset 0 0 96px rgba(0, 0, 0, 0.2); }
 
-.button.style:hover { background-color: #159b0d; }
+.button:hover { background-color: #159b0d; }
 
-.button.style:active {
+.button:active {
 	text-shadow: 0 -1px #0d4d09;
 	background: #189210;
 	border-color: #093606 #0d4d09 #147b0e;

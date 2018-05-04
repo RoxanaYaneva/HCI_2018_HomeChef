@@ -1,0 +1,116 @@
+.container {
+	background: rgba(255,255,255, 0.6);
+	width: 80%;
+	height: auto;
+	margin: 0 auto;
+}
+
+.head { border-bottom: 1px solid black;}
+
+.head, .bottom { background: rgb(210, 255, 183, 0.8); }
+
+.bottom {
+	border-top: 1px solid black;
+	height: 50px;
+}
+
+.head img { padding: 30px 0; }
+
+#icon, fieldset, label, .add, .button.submit { display: block; }
+
+#icon {
+	margin: 0 auto;
+	width: 70px;
+	height: auto;
+}
+
+fieldset {
+	background: rgb(255, 255, 255, 0.8);
+	margin: 15px auto;
+	width: 80%;
+	border-radius: 15px;
+}
+
+legend {
+	font-size: 120%;
+	font-weight: bold;
+}
+
+label { margin-top: 10px; }
+
+.left {
+	width: 55%;
+	float: left;
+}
+
+.right {
+	width: 40%;
+	float: right;
+}
+
+input, select {
+	width: 100%;
+	height: 30px;
+	font-size: 100%;
+	padding: 0 5px;
+}
+
+.right img {
+	width: 100%;
+	height: auto;
+	opacity: 0.4;
+	border: 1px solid black;
+	border-radius: 15px;
+	margin: 30px auto 0;
+}
+
+.info:after {
+    content: '';
+    display: block;
+    clear: both;
+    margin-bottom: 15px;
+}
+
+.ingredients {
+	margin: 15px auto;
+	padding-top: 15px;
+	border-top: 3px ridge white;
+}
+
+textarea {
+	width: 100%;
+	height: 80px;
+	overflow-y: scroll;
+}
+
+.button {
+	text-align: center;
+	margin: 15px auto;
+}
+
+.add { font-size: 90%; }
+
+.add .button {
+	width: 45%;
+	padding: 10px;
+}
+
+.add .button.image { float: left; }
+
+.add .button.video { float: right; }
+
+.button.submit {
+	width: 25%;
+	height: 50px;
+	line-height: 50px;
+	vertical-align: middle;
+	font-size: 120%;
+}
+
+@media all and (max-width: 600px) {
+	.container { font-size: 80%; }
+
+	.left { width: 100%; }
+
+	.right { display: none; }
+}

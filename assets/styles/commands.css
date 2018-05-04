@@ -1,27 +1,41 @@
-body { background: url("../img/background.jpg"); }
+.container {
+	display: flex;
+	justify-content: center;
+}
 
 .circle {
+	margin-top: 50px;
     border: 1px solid black;
-	display: block;
-	margin: 80px auto;
-	width: 500px;
-	height: 500px;
+	width: 40%;
+	height: auto;
 	border-radius: 50%;
 	background: rgba(255, 255, 255, 0.5);
 }
 
-p {
+.circle p {
 	font-family: 'Hoefler Text', Georgia, serif;
 	color: #45a316;
 	text-shadow: 0 1px #154c86;
 	text-align: center;
 	font-size: 240%;
-	padding-top: 25%;
-	padding-bottom: 5%;
+	padding-top: 60px;
+	padding-bottom: 10px;
 }
 
 .microphone {
 	display: block;
 	width: 50%;
-	margin: auto auto;
+	margin: 40px auto;
+}
+
+@media all and (max-width: 400px) {
+	.circle {
+		margin-top: 100px;
+		width: 60%;
+		height: auto;
+	}
+}
+
+@media all and (max-width: 1120px) {
+	.circle p { font-size: 180%; }
 }

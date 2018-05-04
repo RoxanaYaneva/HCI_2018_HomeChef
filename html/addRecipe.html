@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Добави рецепта</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="../assets/styles/addRecipe.css">
+	<link rel="stylesheet" type="text/css" href="../assets/styles/styles.css">
+	<link rel="stylesheet" type="text/css" href="../assets/styles/buttons.css">
+</head>
+<body>
+	<main class="container">
+		<div class="head">
+			<img id="icon" src="../assets/images/recipe.png">
+		</div>
+		<form method="GET" action="../html/addRecipe.html">
+			<fieldset>
+				<legend>Добави репепта</legend>
+				<div class="info">
+					<div class="left">
+						<label for="name">Име на рецептата</label>
+			           	<input name="name" type="text" required="required">
+						<label for="author">Автор</label>
+						<input name="author" type="text" required="required">
+						<label for="dish_kind">Вид ястие</label>
+						<select name="dish_kind" id="dish_kind" placeholder="Избери">
+							<option value="main_dish">Основни ястия</option>
+							<option value="soups">Супи</option>
+							<option value="salads">Салати</option>
+							<option value="appetizers">Предястия</option>
+							<option value="pastries">Тестени</option>
+							<option value="desserts">Десерти</option>
+							<option value="other">Други</option>
+						</select>
+						<label for="time">Време за приготвяне</label>
+						<select name="time" id="time" placeholder="Избери">
+							<option value="15min">15 мин</option>
+							<option value="30min">30 мин</option>
+							<option value="45min">45 мин</option>
+							<option value="60+min">60+ мин</option>
+						</select>	
+						<label for="complexity">Сложност</label>
+						<select name="comlexity" id="complexity" placeholder="Избери">
+							<option value="easy">лесно</option>
+							<option value="normal">средно</option>
+							<option value="hard">трудно</option>
+						</select>
+					</div>
+					<div class="right">
+						<img src="../assets/images/dish.jpg" alt="dish image">
+						<div class="add">
+							<a class="button image" href="">Добави снимка</a>
+							<a class="button video" href="">Добави видео</a>
+						</div>
+					</div>
+				</div>
+				<div class="ingredients">
+					<label for="ingredients">Съставки:</label>
+					<textarea name="ingredients"></textarea>
+				</div>
+				<div class="instructions">
+					<label for="instructions">Начин на приготвяне:</label>
+					<textarea name="instructions"></textarea>
+				</div>
+				<input class="button submit" type="submit" name="add" value="Добави">					
+			</fieldset>
+			<div class="bottom"></div>
+		</form>
+	</main>
+</body>
+</html>
