@@ -29,6 +29,7 @@ header ul li {
 	line-height: 50px;
 	vertical-align: middle;
 	text-align: center;
+	font-weight: bold;
 	border: 0.5px solid white;
 }
 

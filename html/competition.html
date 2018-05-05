@@ -10,6 +10,28 @@
 </head>
 <body>
 	<main class="container">
+		<div class="head">
+			<img id="icon" src="../assets/images/recipe.png">
+		</div>
+		<form method="GET" ation="competition.html">
+			<fieldset>
+				<legend>Участвай в конкурс</legend>
+				<label for="type">Избери конкурс</label>
+				<select name="comp" id="comp">
+					<option value="dessert">Най-добър десерт</option>
+					<option value="lasagne">Най-вкусна лазаня</option>
+					<option value="...">...</option>
+				</select>
+				<label for="type">Избери своя рецепта</label>
+				<select name="recipe" id="recipe">
+					<option value="dish1">Кекс с орехи</option>
+					<option value="dish2">Пиле с ориз</option>
+					<option value="...">...</option>
+				</select>
+				<input class="button" type="submit" name="submit" value="Участвай в конкурс">
+			</fieldset>
+		</form>
 	</main>
+	<div class="bottom"></div>
 </body>
 </html>

@@ -35,13 +35,17 @@
     background-color: rgba(106, 212, 106, 0.5);
 }
 
-#loginDiv input, #registerDiv input {
+input {
     width: 100%;
-    height: 50px;
+    height: 40px;
     padding: 0 10px;
     margin-top: 20px;
     font-size: 110%;
 }
+
+#loginDiv input:nth-of-type(3) { margin-top: 50px; }
+
+#registerDiv input:nth-of-type(4) { margin-top: 50px; }
 
 #loginDiv input:first-child, #registerDiv input:first-child { margin-top: 70px; }
 
