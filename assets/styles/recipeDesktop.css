@@ -1,0 +1,138 @@
+body {
+	background-image: url(../images/background.jpg);
+}
+
+.container {  
+	background-image: linear-gradient(rgba(255,255,255,0.85),
+	                  rgba(255,255,255,0.85)), 
+					  url("../images/background.jpg");
+}
+
+.method, .larger, .title, ul.ingredients, h2, li {
+	font-family: 'Hoefler Text', Georgia, serif;
+}
+
+.title {
+	font-size: 220%;
+	font-weight: 900;
+	color: #45a316;
+	padding-bottom: 10px;
+	text-align: center;
+}
+
+h2 { 
+	font-size: 160%;
+	color: #45a316;
+	padding: 5px 15px;
+	border-bottom: 1.5px ridge grey;
+	margin-top: 40px;
+}
+
+.top-layer {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+}
+
+.top-layer img { margin-left: 20px;  }
+
+.top-layer .right { 
+	align-self: center;
+	margin-left: 70px;
+}
+
+.icon {
+	width: 50px;
+	height: auto;
+	margin: 10px 15px;
+}
+
+li { padding:10px; }
+
+ul.recipe-details {
+	height: 200px;
+	padding: 50px 20px 0;
+	list-style-type: none;
+	font-size: 20px;
+	text-transform: uppercase;
+}
+
+.larger {
+	font-size: 180%;
+	color: #45a316;
+}
+
+.middle-layer {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+}
+
+.container-ingr {
+	flex-grow: 2;
+	font-size: 120%;
+	width: 35%;
+}
+
+.recipe {
+	flex-grow: 4;
+	width: 60%;
+	font-size: 120%;
+}
+
+.comments textarea {
+	display: block;
+	margin: 20px auto;
+	width: 95%;
+	height: 100px;
+	overflow: auto;
+	padding: 5px 10px;
+	border-radius: 10px;
+}
+
+.comments input {
+	float: right;
+	margin-right: 20px;
+}
+
+.more-of-this {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+
+.more-of-this figure { margin: 5px 10px; }
+
+.more-of-this figcaption {
+	font-size: 130%;
+	margin-bottom: 20px;
+	color: black;
+	text-shadow: 1px 1px white;
+}
+
+a { text-decoration: none; }
+
+img.more {
+	width: 280px;
+	height: 180px;
+}
+
+.container-img {
+    text-align: center;
+    color: black;
+}
+
+.button { padding: 10px 20px; }
+
+@media all and (max-width: 700px) {
+	.top-layer, .container-ing, .recipe  {
+		justify-content: space-around;
+	}
+
+	.top-layer .right { margin-left: 0; }
+
+	.container-ing, .recipe {
+		width: 100%;
+	}
+}
