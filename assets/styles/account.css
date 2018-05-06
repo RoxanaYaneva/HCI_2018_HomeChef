@@ -1,7 +1,7 @@
 .container {
 	display: block;
 	width: 80%;
-	height: 800px;
+	height: 100%;
 	margin: 0 auto;
 	background: rgba(255, 255, 255, 0.7);
 }
@@ -38,25 +38,26 @@ a {
 	text-shadow: 1px 1px white;
 }
 
-.left {
-	width: 30%;
-	float: left;
+.profile {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-around;
 }
 
-.right {
-	width: 70%;
-	float: right;
-}
+.left { width: 25%; }
+
+.right { width: 70%; }
 
 .left p {
-	font-size: 90%; 
+	font-size: 90%;
+	width: 100%;
 	display: block;
 	padding: 5px 0;
 }
 
 .left img {
-	display: block;
-	width: 65%;
+	width: 90%;
 	margin: 20px;
 }
 
@@ -107,11 +108,16 @@ h2:nth-of-type(2) { margin-top: 50px; }
 	header ul li { line-height: 20px; }
 
 	.container { width: 100%; }
+
+	.left { width: 40%; }
+
+	.left img { width: 70%; }
 	
 	.myRecipes, .favourites { 
 		display: flex;
 		flex-direction: row;
 		flex-wrap: wrap;
+		justify-content: space-around;
 	}
 
 	article { display: block; }

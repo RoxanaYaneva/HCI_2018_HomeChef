@@ -11,62 +11,67 @@
 <body>
 	<main class="container">
 		<img id="head" src="../assets/images/search-recipe.png" alt="find recipe">
-		<div class="filter-sidebar">
-			<ul>
-				<li>
-					<p>Вид ястие:</p>
-					<label><input type="checkbox" name="group" value="Основни ястия">Основни ястия</label>
-					<label><input type="checkbox" name="group" value="Супи">Супи</label>
-					<label><input type="checkbox" name="group" value="Салата">Салати</label>
-					<label><input type="checkbox" name="group" value="Предястия">Предястия</label>
-					<label><input type="checkbox" name="group" value="Тестени">Тестени</label>
-					<label><input type="checkbox" name="group" value="Десерти">Десерт</label>
-					<label><input type="checkbox" name="group" value="Други">Други</label>
-				</li>
-				<li>
-					<p>Времетраене:</p>
-					<label><input type="checkbox" name="group" value="15">15</label>
-					<label><input type="checkbox" name="group" value="30">30</label>
-					<label><input type="checkbox" name="group" value="45">45</label>
-					<label><input type="checkbox" name="group" value="60+">60+</label>
-				</li>
-				<li>
-					<p>Сложност</p>
-					<label><input type="checkbox" name="group" value="трудно">трудно</label>
-					<label><input type="checkbox" name="group" value="средно">средно</label>
-					<label><input type="checkbox" name="group" value="лесно">лесно</label>
-				</li>
-			</ul>
-		</div>
-		<div class="main-content">
-			<h2>Рецепти</h2>
-			<input type="text">
-			<h2>Популярно тази седмица</h2>
-			<div>
-				<article>
-					<figire>
-						<img src="" alt="">
-					</figire>
-					<figcaption>
-						<a href=""></a>
-					</figcaption>
-				</article>
-				<article>
-					<figire>
-						<img src="" alt="">
-					</figire>
-					<figcaption>
-						<a href=""></a>
-					</figcaption>
-				</article>
-				<article>
-					<figire>
-						<img src="" alt="">
-					</figire>
-					<figcaption>
-						<a href=""></a>
-					</figcaption>
-				</article>
+		<div class="wrapper">
+			<div class="filter-sidebar">
+				<ul>
+					<li>
+						<p>Вид ястие:</p>
+						<label><input type="checkbox" name="group" value="Основни ястия">Основни ястия</label>
+						<label><input type="checkbox" name="group" value="Супи">Супи</label>
+						<label><input type="checkbox" name="group" value="Салата">Салати</label>
+						<label><input type="checkbox" name="group" value="Предястия">Предястия</label>
+						<label><input type="checkbox" name="group" value="Тестени">Тестени</label>
+						<label><input type="checkbox" name="group" value="Десерти">Десерт</label>
+						<label><input type="checkbox" name="group" value="Други">Други</label>
+					</li>
+					<li>
+						<p>Времетраене:</p>
+						<label><input type="checkbox" name="group" value="15">15</label>
+						<label><input type="checkbox" name="group" value="30">30</label>
+						<label><input type="checkbox" name="group" value="45">45</label>
+						<label><input type="checkbox" name="group" value="60+">60+</label>
+					</li>
+					<li>
+						<p>Сложност</p>
+						<label><input type="checkbox" name="group" value="трудно">трудно</label>
+						<label><input type="checkbox" name="group" value="средно">средно</label>
+						<label><input type="checkbox" name="group" value="лесно">лесно</label>
+					</li>
+				</ul>
+			</div>
+			<div class="main-content">
+				<h2>Рецепти</h2>
+				<input type="text" id="filter" placeholder="Име на ястие, продукти">
+				<h2>Популярно днес</h2>
+				<div class="popular today">
+					<figure class="container-img">
+						<img class="more" src="../assets/images/truffles.jpg" alt="Шоколадови трюфели">
+						<figcaption><a href="">Шоколадови трюфели</a></figcaption>
+					</figure>
+					<figure class="container-img">
+						<img class="more" src="../assets/images/egg_cake.jpg" alt="Бисквитена торта с яйца">
+						<figcaption><a href="">Бисквитена торта с яйца</a></figcaption>
+					</figure>
+					<figure class="container-img">
+						<img class="more" src="../assets/images/creme_brulee.jpg" alt="Крем брюле">
+						<figcaption><a href="">Крем брюле</a></figcaption>
+					</figure>
+				</div>
+				<h2>Популярно тази седмица</h2>
+				<div class="popular this-week">
+					<figure class="container-img">
+						<img class="more" src="../assets/images/mascarpone_cake.jpg" alt="Торта с маскарпоне">
+						<figcaption><a href="">Торта с маскарпоне</a></figcaption>
+					</figure>
+					<figure class="container-img">
+						<img class="more" src="../assets/images/pancakes.jpg" alt="Палачинки">
+						<figcaption><a href="">Палачинки</a></figcaption>
+					</figure>
+					<figure class="container-img">
+						<img class="more" src="../assets/images/ice_cream_cake.jpg" alt="Сладоледена торта">
+						<figcaption><a href="">Сладоледена торта</a></figcaption>
+					</figure>
+				</div>
 			</div>
 		</div>
 	</main>
