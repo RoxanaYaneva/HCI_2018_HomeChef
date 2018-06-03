@@ -7,9 +7,99 @@
 	<link rel="stylesheet" type="text/css" href="../assets/styles/recipe.css">
 	<link rel="stylesheet" type="text/css" href="../assets/styles/styles.css">
 	<link rel="stylesheet" type="text/css" href="../assets/styles/buttons.css">
+	<script>
+            // show the given page, hide the rest
+            function show(elementID) {
+                // try to find the requested page and alert if it's not found
+                var ele = document.getElementById(elementID);
+                if (!ele) {
+                    alert("no such element");
+                    return;
+                }
+
+                // get all pages, loop through them and hide them
+                var pages = document.getElementsByClassName('page');
+                for(var i = 0; i < pages.length; i++) {
+                    pages[i].style.display = 'none';
+                }
+
+                // then show the requested page
+                ele.style.display = 'block';
+            }
+        </script>
 </head>
-<body>
+<body onload="show('ingredients');" class="wrapper">
+	<nav>
+		<ul class="links">
+			<li onclick="show('ingredients');" class="button">Съставки</li>
+			<li onclick="show('steps');" class="button">Начин на приготвяне</li>
+			<li onclick="show('video');" class="button">Видео</li>
+			<li onclick="show('photos');" class="button">Снимки</li>
+		</ul>
+	</nav>
 	<main class="container">
+		<div id="ingredients" class="page">
+			<div class="ingredients flex">
+				<div class="ingredients-list">
+					<ul>
+						<li>250 гр. орехови ядки</li>
+						<li>250 гр. краве масло</li>
+						<li>250 гр. пудра захар</li>
+						<li>6 бр. яйца</li>
+						<li>50 гр. какао</li>
+						<li>100 гр. захар</li>
+						<li>2 с.л. ром</li>
+					</ul>
+				</div>
+				<ul class="recipe-details">
+					<li>Време: <span class="larger">90</span> минути</li>
+					<li>Порции: <span class="larger">6</span> порции</li>
+					<li>Сложност: <span class="larger"> лесно</span></li>
+				</ul>
+			</div>
+		</div>
+		<div id="steps" class="page">
+			<ol class="method">
+				<li>Какаото, захарта и прясното мляко се сваряват на крем, който се бърка,
+				докато изстине. Отделно се разбива маслото с пудрата захар,
+				прибавят се един по един жълтъците и изстиналият крем.
+				Всичко се бърка и накрая се прибавя ромът.</li>
+				<li>От тази смес се отделя 1/3 за намазване на тортата след изпичане.</li>
+				<li>Белтъците се разбиват на сняг. Прибавят се счуканите орехи
+				и се рабъркват. Двете части се смесват.</li>
+				<li>Всичко се изсипва в застлана с хартия форма за торти и се пече
+				в умерена фурна</li>
+				<li>След като изстине, тортата се намазва отгоре и отстрани с отделената
+				част от крема. Отгоре се украсява с настърган шоколад и ядки.</li>
+			</ol>
+		</div>
+		<div id="video" class="page">
+			<video controls>
+				<source src="../assets/images/MyRecipes.mp4" type="video/mp4">
+				Your browser does not support the video tag.
+			</video>
+		</div>
+		<div id="photos" class="page">
+			<div class="photos flex">
+				<figure class="container-img">
+					<img class="more" src="../assets/images/rumcake1.jpg" alt="Крем карамел">
+				</figure>
+				<figure class="container-img">
+					<img class="more" src="../assets/images/rumcake2.jpg" alt="Шоколадови трюфели">
+				</figure><figure class="container-img">
+					<img class="more" src="../assets/images/rumcake3.jpg" alt="Крем карамел">
+				</figure>
+				<figure class="container-img">
+					<img class="more" src="../assets/images/rumcake4.jpg" alt="Шоколадови трюфели">
+				</figure>
+				<figure class="container-img">
+					<img class="more" src="../assets/images/rum_cake.jpg" alt="Шоколадови трюфели">
+				</figure>
+				<figure class="container-img">
+					<img class="more" src="../assets/images/rumcake5.jpg" alt="Шоколадови трюфели">
+				</figure>
+			</div>
+		</div>
 	</main>
 </body>
 </html>

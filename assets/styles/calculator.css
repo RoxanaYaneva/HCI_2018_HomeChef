@@ -55,9 +55,10 @@ label {
 }
 
 .button {
+	display: block;
+	padding: 10px;
+	font-size: 90%;
 	margin: 60px auto 0;
-	font-size: 100%;
-	padding: 15px 15px;
 }
 
 @media all and (max-width: 1200px) {

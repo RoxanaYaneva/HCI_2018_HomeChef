@@ -1,210 +1,125 @@
-body {  
-	background-image: linear-gradient(rgba(255,255,255,0.85),
-	                  rgba(255,255,255,0.85)), 
-					  url("../img/background.jpg");
- 
+.wrapper {  
+	background-image: linear-gradient(rgba(255,255,255,0.65),
+	                  rgba(255,255,255,0.65)), 
+					  url("../images/background.jpg");
 }
 
-p {
-	margin: 20px auto;
-	width: 980px;
-	border-radius: 10px;
-	border: 2px solid black;
-	font-family: 'Hoefler Text', Georgia, serif;
-	color: #45a316;
-	text-shadow: 0 1px #154c86;
-	font-size: 35px;
+.links {
+	display: flex;
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+}
+
+.button {
+	flex-grow: 1;
+	line-height: 40px;
+	vertical-align: middle;
 	text-align: center;
 	padding: 10px;
-	background: rgba(255, 255, 255, 0.5);
+	margin: 10px;
+	font-size: 150%;
+	font-weight: bold;
 }
-
-
-.top_layer{
-	height:400px;
-	padding:20px 40px;
-}
-
-li { height:30%;
-	 padding:10px;
-	 text-align:left;
-	 font-family: 'Hoefler Text', Georgia, serif;
-	 }
-
-
-h1 { font-size: 24px;
-	 font-family: 'Hoefler Text', Georgia, serif;
-	 color: #45a316;
-	 padding:5px;
-	 border-bottom-style: solid;
-   	 border-bottom-color: gray;}
-	 
-h2 { font-size: 20px;
-     font-weight: bold; }
-
-
-
-textarea {  width: 100%;
-			height: 100px;
-			padding: 5px 10px;
-			box-sizing: border-box;
-			border-radius: 8px;}
-
-
-.container_title {
-    float:left;
-	padding:30px 20px 10px 50px	;
-}
-
-
-
-ul.recipe_details { 
-	float:left;
-	display:inline-block;
-	padding:40px 20px;
-	list-style-type: none;
-	font-size: 20px;
-	text-transform: uppercase;
-	height:200px;
-}
-
-.container_icon{
-	float:left;
-	position: relative;
-    text-align: center;
-    font-family: 'Hoefler Text', Georgia, serif;
-	color: #45a316;
-	font-size:22px;
-}
-
-.all_icons{
-	float:left;
-	padding:80px 30px;
-	height:200px;
-	
-}
-
-img.icon{
-	padding:3px 3px;
-	width:90px;
-	height:90px;
-}
-	
-img {
-	width:400px;
-	height:300px;
-}
-	
-.title {
-	font-size: 34px;
-	font-weight: 900;
-	font-family: 'Hoefler Text', Georgia, serif;
-	color: #45a316;
-	padding-bottom: 10px;
-}
-
 
 .larger {
-	font-size: 32px;
 	font-family: 'Hoefler Text', Georgia, serif;
 	color: #45a316;
+	font-style: italic;
 }
 
-.bottom-left {
-    position: absolute;
-    bottom: 8px;
-    left: 16px;
+.ingredients.flex {
+	display: flex !important;
+	flex-direction: row;
+	margin: 50px 0 0 ;
 }
 
-.bottom-right {
-    position: absolute;
-    bottom: 8px;
-    right: 16px;
-}
-
-.top-left {
-    position: absolute;
-    top: 8px;
-    left: 16px;
-}
-.top-right {
-    position: absolute;
-    top: 8px;
-    right: 16px;
-}
-
-.container_ingr {
-	width:30%;
-	float:left;
-	padding:3px 20px 30px 50px	;
-	margin-right:10%;
-}
-
-ul.ingredients {
-	font-size: 20px;
-	font-family: 'Hoefler Text', Georgia, serif; 
-}
-
-
-
-.method {
-	font-size: 20px;
-	font-family: 'Hoefler Text', Georgia, serif;
-}
-
-.section {
-	padding:3px 20px 30px 50px	;
-}
-
-
-img.more{
-	width: 320px;
-	height: 200px;
-}
-
-.container_img {
-	float:left;
-	position: relative;
-    text-align: center;
-    color: black;
-	font-size:22px;
-}
-
-.add {
-	font-family: sans-serif;
-	padding: 5px 10px;
-	margin: 35px 300px;
-	font-size: 30px;
-	min-width: 96px;
-	line-height: 46px;
-	color: white;
-	text-align: center;
-	text-decoration: none;
-
-	text-shadow: 0 1px #154c86;
-	background-color: #247edd;
-	background-clip: padding-box;
-	background-color: #1ca913;
+.ingredients-list {
+	width: 50%;
+	font-size: 170%;
+	margin: 30px 60px 0;
+	padding: 10px;
+	list-style-type: none;
+	background: rgba(255,255,255,0.65);
+	border-radius: 15px;
 	border: 1px solid green;
-	border-radius: 5px;
-	box-shadow: inset 0 1px rgba(255, 255, 255, 0.4), 0 1px 2px rgba(0, 0, 0, 0.2);
-	background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0) 50%, rgba(0, 0, 0, 0.12) 51%, rgba(0, 0, 0, 0.04));
 }
 
-.add:before {
-	border-radius: 10px;
-	background: transparent;
-	box-shadow: inset 0 0 38px rgba(255, 255, 255, 0.5);
+.ingredients-list ul {
+	list-style-type: none;
+	margin: 0;
 }
 
-.add:active:before { box-shadow: inset 0 0 96px rgba(0, 0, 0, 0.2); }
+ul li { padding: 10px; }
 
-.add:hover { background-color: #159b0d; }
-
-.add:active {
-	text-shadow: 0 -1px #0d4d09;
-	background: #189210;
-	border-color: #093606 #0d4d09 #147b0e;
-	background-image: linear-gradient(to bottom, #126d0c, #20c016);
+.ingredients-list li::before {
+	content: "•"; 
+	color: green;
+	display: inline-block; 
+	width: 1em;
 }
 
+.recipe-details {
+	width: 35%;
+	list-style-type: none;
+	font-size: 200%;
+	margin: 30px 0 0;
+	background: rgba(255,255,255,0.65);
+	border-radius: 15px;
+	border: 1px solid green;
+}
+
+.recipe-details li:first-child {
+	padding-top: 110px;
+}
+
+.photos.flex {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+.method { margin: 60px 30px 0; }
+
+ol {
+	font-size: 150%;
+	list-style-type: none;
+}
+
+ol li {
+    counter-increment: step-counter;
+    padding: 20px;
+}
+
+ol li::before {
+	content: counter(step-counter);
+    margin-right: 15px;
+    font-size: 100%;
+    color: white;
+    font-weight: bold;
+    padding: 5px 12px;
+    border-radius: 50%;
+}
+
+ol li:nth-child(odd)::before {
+    background-color: #118738;
+}
+
+ol li:nth-child(even)::before {
+    background-color: #61ce85;
+}
+
+figure img {
+	height: 230px;
+	width: 340px;
+}
+
+video {
+	display: block;
+	width: 70%;
+	height: auto;
+	border: 1px solid black;
+	margin: 10px auto;
+	background: black;
+}
