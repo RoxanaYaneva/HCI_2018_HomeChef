@@ -77,6 +77,10 @@ input, select {
 	border-top: 3px ridge white;
 }
 
+#addImage, #addVideo {
+	display: none;
+}
+
 textarea {
 	width: 100%;
 	height: 80px;

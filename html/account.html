@@ -7,6 +7,7 @@
 	<link rel="stylesheet" type="text/css" href="../assets/styles/account.css">
 	<link rel="stylesheet" type="text/css" href="../assets/styles/styles.css">
 	<link rel="stylesheet" type="text/css" href="../assets/styles/buttons.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 </head>
 <body>
 	<header>
@@ -21,7 +22,9 @@
 	<main class="container">
 		<div class="profile">
 			<div class="left">
-				<img src="../assets/images/user.png" alt="Профилна снимка">
+				<img id="profileImage" src="../assets/images/user.png" alt="Профилна снимка">
+				<script type="text/javascript" src="../assets/javascript/account.js"></script>
+				<input id="imageUpload" type="file" name="profile_photo" placeholder="Photo" required="" capture>
 				<div id="user-info">
 					<p>Регистриран на: 12.02.2018г.</p>
 					<p>Брой добавени рецепти: 10</p>
