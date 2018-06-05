@@ -18,6 +18,7 @@ p, #result {
 .scale {
 	display: block;
 	font-size: 250%;
+	height: 70vh;
 	font-weight: bold;
 	font-family: Arial, sans-serif;
 	color: #c1bbbb;
