@@ -14,14 +14,17 @@ header nav {
 #back-btn {
 	position: fixed;
 	top: 0;
-	width: 50px;
-	height: auto;
 	font-size: 250%;
 	border: none;
 	background: transparent;
+	margin: 5px;
 }
 
-#back-btn a { color: green; }
+#back-btn img {
+	width: 45px;
+	height: auto;
+	margin: 5px;
+}
 
 * { box-sizing: border-box; }
 
