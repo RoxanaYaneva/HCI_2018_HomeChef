@@ -1,5 +1,4 @@
 $(function () {
-
     var products = [];
     $.get('http://localhost/HCI_2018_HomeChef/products.json').then(function (prod) {
         products = JSON.parse(prod);

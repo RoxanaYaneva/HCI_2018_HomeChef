@@ -1,0 +1,22 @@
+{
+  "name": "hci_2018_homechef",
+  "version": "1.0.0",
+  "description": "Course Project, HCI, 2018, FMI",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RoxanaYaneva/HCI_2018_HomeChef.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/RoxanaYaneva/HCI_2018_HomeChef/issues"
+  },
+  "homepage": "https://github.com/RoxanaYaneva/HCI_2018_HomeChef#readme",
+  "dependencies": {
+    "jquery": "^3.3.1"
+  }
+}
