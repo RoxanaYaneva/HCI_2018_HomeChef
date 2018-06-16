@@ -4,25 +4,36 @@
 	<title>Добави рецепта</title>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="../assets/styles/account.css">
 	<link rel="stylesheet" type="text/css" href="../assets/styles/addRecipe.css">
 	<link rel="stylesheet" type="text/css" href="../assets/styles/styles.css">
 	<link rel="stylesheet" type="text/css" href="../assets/styles/buttons.css">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+	<script src="javascript/addRecipe.js"></script>
 </head>
 <body>
+		<header>
+				<ul>
+					<li><a href="account.html">Моят профил</a></li>
+					<li><a href="addRecipe.html">Добави рецепта</a></li>
+					<li><a href="filterDesktop.html">Търси рецепта</a></li>
+					<li><a href="competition.html">Участвай в конкурс</a></li>
+					<li><a href="login.html">Изход</a></li>
+				</ul>
+			</header>
 	<main class="container">
-		<div class="head">
+	<!-- 	<div class="head">
 			<img id="icon" src="../assets/images/recipe.png">
-		</div>
+		</div> -->
 		<form method="GET" action="../html/addRecipe.html">
 			<fieldset>
 				<legend>Добави репепта</legend>
 				<div class="info">
 					<div class="left">
 						<label for="name">Име на рецептата</label>
-			           	<input name="name" type="text" required="required">
+			           	<input name="name" type="text" required="required" id="name">
 						<label for="author">Автор</label>
-						<input name="author" type="text" required="required">
+						<input name="author" type="text" required="required" id="author">
 						<label for="dish_kind">Вид ястие</label>
 						<select name="dish_kind" id="dish_kind" placeholder="Избери">
 							<option value="main_dish">Основни ястия</option>
@@ -69,13 +80,13 @@
 				</div>
 				<div class="ingredients">
 					<label for="ingredients">Съставки:</label>
-					<textarea name="ingredients"></textarea>
+					<textarea name="ingredients" id="ingredients"></textarea>
 				</div>
 				<div class="instructions">
 					<label for="instructions">Начин на приготвяне:</label>
-					<textarea name="instructions"></textarea>
+					<textarea name="instructions" id="instructions"></textarea>
 				</div>
-				<input class="button submit" type="submit" name="add" value="Добави">					
+				<input class="button submit" type="submit" name="add" value="Добави" id='add'>					
 			</fieldset>
 			<div class="bottom"></div>
 		</form>

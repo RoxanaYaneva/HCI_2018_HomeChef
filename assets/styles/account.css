@@ -38,6 +38,10 @@ a {
 	text-shadow: 1px 1px white;
 }
 
+figure{
+	margin: 1em 1em 0em 1em;
+}
+
 .profile {
 	display: flex;
 	flex-direction: row;
@@ -57,20 +61,30 @@ a {
 }
 
 .left img {
-	width: 70%;
-	margin: 20px;
+    width: 70%;
+    margin: 37px;
 }
 
 #user-info { padding: 0 20px; }
 
 .myRecipes, .favourites { 
 	display: table;
-	margin-bottom: 10px;
+    margin-bottom: 10px;
+    background: rgb(232, 232, 232);
+	border-radius: 10px;
+	padding-bottom: 1em;
 }
 
 article {
-	display: table-cell;
-	margin: 0 10px;
+    display: table-cell;
+    margin: 0px 10px;
+    text-align: center;
+    font-size: 1.3em;
+}
+
+article:hover{
+	background-color: rgb(210, 255, 183);
+	font-weight: bold;
 }
 
 .right img {
@@ -83,6 +97,9 @@ article {
 	float: right;
 	margin-right: 40px;
 	text-decoration: underline;
+}
+.more:hover{
+	font-weight: bold;
 }
 
 h2 {
@@ -136,4 +153,17 @@ h2:nth-of-type(2) { margin-top: 50px; }
 		width: 215px;
 		height: 180px;
 	}
+}
+
+
+#profileImage{
+	border-radius: 50%;
+    border: 6px solid rgb(210, 255, 183);
+}
+
+#user-info{
+	border: 4px solid rgb(210, 255, 183);
+    border-radius: 30px;
+    font-size: 1.2em;
+	background: rgb(232, 232, 232);
 }

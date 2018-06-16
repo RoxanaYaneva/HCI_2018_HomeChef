@@ -26,7 +26,7 @@
 
 fieldset {
 	background: rgb(255, 255, 255, 0.8);
-	margin: 15px auto;
+	margin: 1px auto;
 	width: 95%;
 	border-radius: 15px;
 }
@@ -117,4 +117,8 @@ textarea {
 	.left { width: 100%; }
 
 	.right { display: none; }
+}
+
+form{
+	padding: 1em;
 }

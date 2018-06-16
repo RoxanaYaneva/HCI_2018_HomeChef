@@ -1,6 +1,6 @@
 .container {
 	width: 80%;
-	height: 90vh;
+	height: 80vh;
 	margin: 0 auto;
 	background: rgba(255, 255, 255, 0.7);
 }
@@ -29,7 +29,7 @@
 fieldset {
 	width: 90%;
 	border-radius: 10px;
-	margin: 80px auto;
+	margin: 1px auto;
 	background: rgb(255, 255, 255, 0.8);
 }
 
@@ -49,4 +49,8 @@ select, label {
 	padding: 10px;
 	margin: 20px auto;
 	font-size: 130%;
+}
+
+form{
+	padding: 1em;
 }

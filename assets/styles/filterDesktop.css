@@ -103,6 +103,21 @@ h2 {
 	margin: 0 10px;
 }
 
+.popular figure:hover { 
+	background-color: rgb(210, 255, 183);
+}
+
+div.popular{
+	display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 1.3em 1em;
+    padding: 11px;
+    background: rgb(232, 232, 232);
+    border-radius: 12px;
+}
+
 .popular figcaption {
 	font-size: 130%;
 	margin-bottom: 20px;
@@ -142,4 +157,9 @@ figure img {
 		text-align: center;
 		border: none;
 	}
+}
+
+article:hover{
+	background-color: rgb(210, 255, 183);
+	font-weight: bold;
 }

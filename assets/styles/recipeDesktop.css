@@ -136,3 +136,35 @@ img.more {
 		width: 100%;
 	}
 }
+
+header:first-of-type { 
+	display: block;
+	width: 80%;
+	margin: 0 auto;
+	background: rgb(210, 255, 183);
+}
+
+header:first-of-type ul {
+	justify-content: center;
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+	display: flex;
+	flex-direction: row;
+	vertical-align: middle;
+}
+
+header:first-of-type ul li {
+	flex-grow: 1;
+	padding: 0 10px;
+	line-height: 50px;
+	vertical-align: middle;
+	text-align: center;
+	font-weight: bold;
+	border: 0.5px solid white;
+}
+
+a {
+    color: black;
+    text-shadow: 1px 1px white;
+}
