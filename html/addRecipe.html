@@ -9,7 +9,7 @@
 	<link rel="stylesheet" type="text/css" href="../assets/styles/styles.css">
 	<link rel="stylesheet" type="text/css" href="../assets/styles/buttons.css">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-	<script src="javascript/addRecipe.js"></script>
+	<script src="../assets/javascript/recipeController.js"></script>
 </head>
 <body>
 		<header>
@@ -85,6 +85,18 @@
 				<div class="instructions">
 					<label for="instructions">Начин на приготвяне:</label>
 					<textarea name="instructions" id="instructions"></textarea>
+				</div>
+
+				<div class='addInfo'>
+					<p id="err">
+						Моля, попълнете всички полета!
+					</p>
+					
+				</div>
+				<div class='addInfo'>
+					<p id="success">
+							Вашата рецепта беше добавена успешно!
+					</p>
 				</div>
 				<input class="button submit" type="submit" name="add" value="Добави" id='add'>					
 			</fieldset>

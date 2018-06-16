@@ -88,6 +88,14 @@ ul.recipe-details {
 	overflow: auto;
 	padding: 5px 10px;
 	border-radius: 10px;
+	font-size: 20px;
+    padding: 1em;
+}
+
+#commentButton{
+	width: 200px;
+    font-size: 19px;
+
 }
 
 .comments input {
@@ -154,6 +162,13 @@ header:first-of-type ul {
 	vertical-align: middle;
 }
 
+figure{
+	border: 5px solid rgb(210, 255, 183);
+    border-radius: 19px;
+}
+figure:hover{
+	background-color:  rgb(210, 255, 183);
+}
 header:first-of-type ul li {
 	flex-grow: 1;
 	padding: 0 10px;
@@ -167,4 +182,16 @@ header:first-of-type ul li {
 a {
     color: black;
     text-shadow: 1px 1px white;
+}
+
+img:first-of-type{
+	border-radius: 60px;
+}
+
+.addInfo{
+	font-weight: bold;
+    font-size: 19px;
+    padding-left: 1.5em;
+	color: green;
+	display: none;
 }

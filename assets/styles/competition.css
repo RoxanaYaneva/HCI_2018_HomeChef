@@ -54,3 +54,11 @@ select, label {
 form{
 	padding: 1em;
 }
+
+.addInfo{
+	text-align: center;
+	font-weight: bold;
+	font-size: 19px;
+	display: none;
+	color:green;
+}

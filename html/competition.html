@@ -8,6 +8,8 @@
 	<link rel="stylesheet" type="text/css" href="../assets/styles/competition.css">
 	<link rel="stylesheet" type="text/css" href="../assets/styles/styles.css">
 	<link rel="stylesheet" type="text/css" href="../assets/styles/buttons.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+	<script src="../assets/javascript/recipeController.js"></script>
 </head>
 <body>
 		<header>
@@ -28,8 +30,8 @@
 				<legend>Участвай в конкурс</legend>
 				<label for="type">Избери конкурс</label>
 				<select name="comp" id="comp">
-					<option value="dessert">Най-добър десерт</option>
-					<option value="lasagne">Най-вкусна лазаня</option>
+					<option value="Най-добър десерт">Най-добър десерт</option>
+					<option value="Най-вкусна лазаня">Най-вкусна лазаня</option>
 					<option value="...">...</option>
 				</select>
 				<label for="type">Избери своя рецепта</label>
@@ -38,7 +40,14 @@
 					<option value="dish2">Пиле с ориз</option>
 					<option value="...">...</option>
 				</select>
-				<input class="button" type="submit" name="submit" value="Участвай в конкурс">
+				<div class='addInfo'>
+						<p>
+							Честито!
+						</br>
+						 Вече участвате в конкурса <span style="color:black"></span>!
+						</p>
+					</div>
+				<input class="button" id='competition' type="submit" name="submit" value="Участвай в конкурс">
 			</fieldset>
 		</form>
 	</main>

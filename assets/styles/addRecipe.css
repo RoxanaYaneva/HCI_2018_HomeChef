@@ -72,7 +72,7 @@ input, select {
 }
 
 .ingredients {
-	margin: 15px auto;
+	margin: -10px auto;
 	padding-top: 15px;
 	border-top: 3px ridge white;
 }
@@ -121,4 +121,19 @@ textarea {
 
 form{
 	padding: 1em;
+}
+
+.addInfo{
+	text-align: center;
+	font-weight: bold;
+	font-size: 19px;
+	display: none;
+}
+
+#err{
+	color:red;
+}
+
+#success{
+	color:green;
 }
