@@ -6,7 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="../assets/styles/calculator.css">
     <link rel="stylesheet" type="text/css" href="../assets/styles/styles.css">
-    <link rel="stylesheet" type="text/css" href="../assets/styles/buttons.css">
+    <link rel="stylesheet" type="text/css" href="../assets/styles/buttons.css">\
+    <script src="../assets/javascript/products.js"></script>
 </head>
 <body>
     <header>
@@ -15,16 +16,18 @@
         </nav>
     </header>
     <main class="container">
-        <p>Калкулатор на калории</p>
-        <form method="POST" action="">
-            <fieldset>
-                <legend>Въведете продуктите</legend>
-                <label>Продукт: <input class="input" name="product" required> </label>
-                <label>Количество (в грама): <input class="input" name="quantity" required> </label>
-                <input class="button" type="submit" value="Изчисли">
-            </fieldset>
-        </form>
-        <p id="result">Общо калории: 0 cal</p>
-    </main>
+            <p>Калкулатор на калории</p>
+            <form method="POST" action="">
+                <fieldset>
+                    <legend>Въведете продуктите</legend>
+                    <label>Продукт: <input id="product" list="productsList"  class="input" required/></label>
+                    <datalist id="productsList"></datalist>
+                    <label>Количество (в грама): <input class="input" name="quantity" id='quantity' required/> </label>
+                    <input class="button" type="submit" value="Изчисли" id='calculate'> 
+                </fieldset>
+            </form>
+            <p id="hidden"> Моля, попълнете празните полета!</p>
+            <p id="result"></p>
+        </main>
 </body>
 </html>

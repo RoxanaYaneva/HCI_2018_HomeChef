@@ -88,3 +88,16 @@ label {
 
 	label { font-size: 80%; }
 }
+
+#cal{
+	color: #45a316;
+}
+
+#hidden, #result{
+	display: none;
+}
+
+#hidden{
+	color: tomato;
+	font-weight: bold;
+}
