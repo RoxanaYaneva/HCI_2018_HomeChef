@@ -62,3 +62,8 @@ form{
 	display: none;
 	color:green;
 }
+
+.buttons {
+	display: flex;
+	flex-direction: row;
+}

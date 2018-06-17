@@ -87,6 +87,11 @@ textarea {
 	overflow-y: scroll;
 }
 
+.buttons {
+	display: flex;
+	flex-direction: row;
+}
+
 .button {
 	text-align: center;
 	margin: 15px auto;
@@ -104,7 +109,7 @@ textarea {
 .add .button.video { float: right; }
 
 .button.submit {
-	width: 25%;
+	width: 20%;
 	height: 50px;
 	line-height: 50px;
 	vertical-align: middle;
