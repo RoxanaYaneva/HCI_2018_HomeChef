@@ -84,10 +84,10 @@ h2 {
     background-position: 100% 0;
 	height: 45px;
 	display: block;
-	width: 100%;
+	width: 84%;
 	font-size: 130%;
 	padding: 15px;
-	margin-bottom: 50px;
+	margin-bottom: 10px;
 }
 
 .popular {
@@ -152,4 +152,32 @@ figure img {
 article:hover{
 	background-color: rgb(210, 255, 183);
 	font-weight: bold;
+}
+
+.buttons input{
+    width: 106%;
+	height: 80%;
+	font-size: 17px;
+}
+
+.buttons{
+	width: 14%;
+    height: 50px;
+}
+
+#searchResults{
+	display: none;
+}
+
+.popularDiv h3{
+	display: inline-block;
+	width: 49%;
+	text-indent: 1em;
+	cursor: pointer;
+	color: gray;
+	font-size: 1.4em;
+}
+
+.popularDiv h3:hover{
+	color:black;
 }

@@ -11,6 +11,7 @@
 	<link rel="stylesheet" type="text/css" href="../assets/styles/buttons.css">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 	<script src="../assets/javascript/guest.js"></script>
+	<script src="../assets/javascript/recipeController.js"></script>
 </head>
 
 <body>
@@ -28,7 +29,7 @@
 			<li class="guest">
 				<a href="register.html">Регистрация</a>
 			</li>
-			<li>
+			<li class="searchRecipe">
 				<a href="filterDesktop.html">Търси рецепта</a>
 			</li>
 			<li class="logged">
@@ -40,9 +41,6 @@
 		</ul>
 	</header>
 	<main class="container">
-		<!-- <div id="head">
-			<img src="../assets/images/recipe.png" alt="recipe">
-		</div> -->
 		<div class="wrapper">
 			<div class="filter-sidebar">
 				<ul>
@@ -87,65 +85,142 @@
 			</div>
 			<div class="main-content">
 				<h2>Рецепти</h2>
-				<input type="text" id="filter" placeholder="Име на ястие, продукти">
-				<h2>Популярно днес</h2>
-				<div class="popular today">
-					<a href="recipeDesktopVersion.html">
-						<figure class="container-img">
-							<img src="../assets/images/rum_cake.jpg" alt="Торта с ром">
-							<figcaption>
-								<a href="recipeDesktopVersion.html">Торта с ром</a>
-							</figcaption>
-						</figure>
-					</a>
-					<a href="">
-						<figure class="container-img">
-							<img src="../assets/images/egg_cake.jpg" alt="Бисквитена торта с яйца">
-							<figcaption>
-								<a href="">Бисквитена торта с яйца</a>
-							</figcaption>
-						</figure>
-					</a>
-					<a href="">
-						<figure class="container-img">
-							<img src="../assets/images/creme_brulee.jpg" alt="Крем брюле">
-							<figcaption>
-								<a href="">Крем брюле</a>
-							</figcaption>
-						</figure>
-					</a>
-
+				<input type="text" id="filter" placeholder="Име на ястие, продукти" required>
+				<div class="buttons" id="search">
+						<input class="button submit" id='cancel' type="submit" name="cancel" value="Търси" >
 				</div>
-				<a class="more" href="">още..</a>
-				<h2>Популярно тази седмица</h2>
-				<div class="popular this-week">
-					<a href="">
-						<figure class="container-img">
-							<img src="../assets/images/mascarpone_cake.jpg" alt="Торта с маскарпоне">
-							<figcaption>
-								<a href="">Торта с маскарпоне</a>
-							</figcaption>
-						</figure>
-					</a>
-					<a href="">
 
-						<figure class="container-img">
-							<img src="../assets/images/pancakes.jpg" alt="Палачинки">
-							<figcaption>
-								<a href="">Палачинки</a>
-							</figcaption>
-						</figure>
-					</a>
-					<a href="">
-						<figure class="container-img">
-							<img src="../assets/images/ice_cream_cake.jpg" alt="Сладоледена торта">
-							<figcaption>
-								<a href="">Сладоледена торта</a>
-							</figcaption>
-						</figure>
-					</a>
-				</div>
-				<a class="more" href="">още..</a>
+				<section id="mainSection">
+						<div class='popularDiv'>
+								<h3>Популярно днес</h3>
+								<h3>Популярно тази седмица</h3>
+						</div>
+						<div>
+								<h2>Популярно днес</h2>
+								<div class="popular today">
+									<a href="recipeDesktopVersion.html">
+										<figure class="container-img">
+											<img src="../assets/images/rum_cake.jpg" alt="Торта с ром">
+											<figcaption>
+												<a href="recipeDesktopVersion.html">Торта с ром</a>
+											</figcaption>
+										</figure>
+									</a>
+									<a href="">
+										<figure class="container-img">
+											<img src="../assets/images/egg_cake.jpg" alt="Бисквитена торта с яйца">
+											<figcaption>
+												<a href="">Бисквитена торта с яйца</a>
+											</figcaption>
+										</figure>
+									</a>
+									<a href="">
+										<figure class="container-img">
+											<img src="../assets/images/creme_brulee.jpg" alt="Крем брюле">
+											<figcaption>
+												<a href="">Крем брюле</a>
+											</figcaption>
+										</figure>
+									</a>
+				
+								</div>
+								<a class="more" href="">още..</a>
+						</div>
+						<div>
+								<h2>Популярно тази седмица</h2>
+								<div class="popular this-week">
+									<a href="">
+										<figure class="container-img">
+											<img src="../assets/images/mascarpone_cake.jpg" alt="Торта с маскарпоне">
+											<figcaption>
+												<a href="">Торта с маскарпоне</a>
+											</figcaption>
+										</figure>
+									</a>
+									<a href="">
+				
+										<figure class="container-img">
+											<img src="../assets/images/pancakes.jpg" alt="Палачинки">
+											<figcaption>
+												<a href="">Палачинки</a>
+											</figcaption>
+										</figure>
+									</a>
+									<a href="">
+										<figure class="container-img">
+											<img src="../assets/images/ice_cream_cake.jpg" alt="Сладоледена торта">
+											<figcaption>
+												<a href="">Сладоледена торта</a>
+											</figcaption>
+										</figure>
+									</a>
+								</div>
+								<a class="more" href="">още..</a>
+						</div>
+						
+				</section>
+			
+				<section id="searchResults">
+						<div class='popularDiv'>
+								<h3>Популярно днес</h3>
+								<h3>Популярно тази седмица</h3>
+						</div>
+						<h2>Намерени са 6 рецепти</h2>
+						<div class="popular today">
+							<a href="recipeDesktopVersion.html">
+								<figure class="container-img">
+									<img src="../assets/images/patotoes1.jpg" alt="Червени картофи с масло и чесън">
+									<figcaption>
+										<a href="recipeDesktopVersion.html">Картофи с масло и чесън</a>
+									</figcaption>
+								</figure>
+							</a>
+							<a href="">
+								<figure class="container-img">
+									<img src="../assets/images/patatoes2.jpg" alt='Картофи "Ветрило"'>
+									<figcaption>
+										<a href="">Картофи "Ветрило"</a>
+									</figcaption>
+								</figure>
+							</a>
+							<a href="">
+								<figure class="container-img">
+									<img src="../assets/images/patatoes3.jpg" alt="Фритата с картофи и чушки">
+									<figcaption>
+										<a href="">Фритата с картофи и чушки</a>
+									</figcaption>
+								</figure>
+							</a>
+							<a href="">
+									<figure class="container-img">
+										<img src="../assets/images/patatoes4.jpg" alt='Картофи "Буланжер"'>
+										<figcaption>
+											<a href="">Картофи "Буланжер"</a>
+										</figcaption>
+									</figure>
+								</a>
+								<a href="">
+			
+									<figure class="container-img">
+										<img src="../assets/images/patatoes5.jpg" alt="Огретен с картофи">
+										<figcaption>
+											<a href="">Огретен с картофи</a>
+										</figcaption>
+									</figure>
+								</a>
+				
+								<a href="">
+			
+										<figure class="container-img">
+											<img src="../assets/images/patatoes6.jpg" alt="Постни картофени шницели">
+											<figcaption>
+												<a href="">Постни картофени шницели</a>
+											</figcaption>
+										</figure>
+									</a>
+					
+						</div>
+				</section>
 			</div>
 		</div>
 	</main>
