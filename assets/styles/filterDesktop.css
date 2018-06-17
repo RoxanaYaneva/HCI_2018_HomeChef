@@ -96,30 +96,20 @@ h2 {
 	flex-wrap: wrap;
 	justify-content: space-around;
 	margin: 0;
-	padding: 0;
+	padding: 10px;
+	border-radius: 12px;
+	background: rgb(232, 232, 232);
 }
 
-.popular figure { 
-	margin: 0 10px;
-}
+.popular figure { margin: 0 10px; }
 
 .popular figure:hover { 
 	background-color: rgb(210, 255, 183);
-}
-
-div.popular{
-	display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    margin: 1.3em 1em;
-    padding: 11px;
-    background: rgb(232, 232, 232);
-    border-radius: 12px;
+	font-weight: bold;
 }
 
 .popular figcaption {
-	font-size: 130%;
+	font-size: 11	0%;
 	margin-bottom: 20px;
 	color: black;
 	text-shadow: 1px 1px white;
@@ -131,8 +121,8 @@ a {
 }
 
 figure img {
-	width: 250px;
-	height: 150px;
+	width: 36vh;
+	height: 24vh;
 }
 
 .more{
