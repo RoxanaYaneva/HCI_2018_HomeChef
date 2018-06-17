@@ -96,7 +96,7 @@ $(function () {
             var name = $('#product').val();
             var quantity = $('#quantity').val();
 
-            if (name != '' && quantity != '') {
+            if (name != '' && quantity != '' && !isNaN(Number(quantity))) {
                 var product = products.find(prod => prod.name === name);
                 var calories = product.calories * (quantity / 100);
                 $("#result").html("Калории за " + quantity + " гр. " + name + " : <span id='cal'>" + calories.toFixed(2) + "</span> kcal");

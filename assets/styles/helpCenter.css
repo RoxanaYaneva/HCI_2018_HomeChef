@@ -30,7 +30,7 @@ img {
 
 article {
     display: table-cell;
-    margin: 0px 10px;
+	width: 33%;
     text-align: center;
     font-size: 1.3em;
 }
