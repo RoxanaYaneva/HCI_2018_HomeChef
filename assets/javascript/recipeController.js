@@ -32,17 +32,23 @@ $(function () {
 	})
 
 
+	$("#comment").on("keypress", function(){
+		$("#errInfo").hide();
+	})
+
 	$("#commentButton").on('click', function(){
 		event.preventDefault();
 		var textarea=$('#comment').val();
 		if(textarea!=''){
 			$(".comments ul").append(`<li>
-			<img src="../assets/images/user.png" alt="user"> <p> Мария Иванова</p>	
+			<img src="../assets/images/user.png" alt="user"> <p> Мария Иванова <span style="color:gray"> &nbsp;&nbsp;22.06.2018, 13:22</span>	</p>	
 		<div>${textarea}</div>
 		</li>`);
 			$("div.addInfo").eq(0).show();
 			$('#comment').val('');
 			setInterval(function () {  $("div.addInfo").eq(0).hide();}, 1400);
+		} else{
+			$("#errInfo").show();
 		}
 	})
 

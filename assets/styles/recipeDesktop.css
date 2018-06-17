@@ -240,4 +240,13 @@ img:first-of-type{
 	background-color: aliceblue;
 	border-radius: 20px;
 	margin:1em;
+	cursor: pointer;
+}
+
+#errInfo p{
+	color:red; text-indent:2em;
+}
+
+#errInfo{
+	display:none;
 }
