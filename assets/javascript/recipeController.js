@@ -36,6 +36,10 @@ $(function () {
 		event.preventDefault();
 		var textarea=$('#comment').val();
 		if(textarea!=''){
+			$(".comments ul").append(`<li>
+			<img src="../assets/images/user.png" alt="user"> <p> Мария Иванова</p>	
+		<div>${textarea}</div>
+		</li>`);
 			$("div.addInfo").eq(0).show();
 			$('#comment').val('');
 			setInterval(function () {  $("div.addInfo").eq(0).hide();}, 1400);
@@ -47,11 +51,17 @@ $(function () {
 		if($("#filter").val()){
 			$("#searchResults").show();
 			$("#mainSection").hide();
+		} else {
+			$("#search~p").show();
 		}
 	})
 
+	$("#filter").on("input", function(){
+		$("#search~p").hide();
+	})
 
 	$("input[type=checkbox]").on('click', function(){
+		$("#search~p").hide();
 		$("#searchResults").show();
 		$("#mainSection").hide();
 	})

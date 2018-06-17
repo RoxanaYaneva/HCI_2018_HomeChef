@@ -29,6 +29,6 @@ $(function(){
             g.style.display = "none";
         });
 
-        $(".comments").hide();
+        $("#addComment").hide();
     }
 })

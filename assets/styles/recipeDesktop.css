@@ -12,11 +12,16 @@ body {
 	font-family: Arial, sans-serif;
 }
 
+img{
+	border-radius: 20px;
+	cursor:pointer;
+}
+
+
 .title {
 	font-size: 220%;
 	font-weight: 900;
 	color: #45a316;
-	padding-bottom: 10px;
 	text-align: center;
 }
 
@@ -50,7 +55,7 @@ h2 {
 li { padding:10px; }
 
 ul.recipe-details {
-	height: 200px;
+	height: 168px;
 	padding: 50px 20px 0;
 	list-style-type: none;
 	font-size: 20px;
@@ -194,4 +199,45 @@ img:first-of-type{
     padding-left: 1.5em;
 	color: green;
 	display: none;
+}
+
+#rating{
+	width: 159px;
+	display: block;
+	margin: 0em 0em 2em 3em;
+}
+
+
+.right div{
+	position: relative;
+    top: 60px;
+    right: -20px;
+}
+
+.comments ul img{
+	width: 4%;
+}
+
+.comments p{
+	display: inline-block;
+	position: relative;
+    left: 10px;
+    top: -20px;
+	height: 100%;
+	color:green;
+	font-weight: bold;
+}
+
+.comments ul{
+	list-style-type: none;
+}
+
+.comments ul div{
+	margin: -0.5em 0.2em 1em;
+}
+
+.comments ul li{
+	background-color: aliceblue;
+	border-radius: 20px;
+	margin:1em;
 }

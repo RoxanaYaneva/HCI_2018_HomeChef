@@ -23,6 +23,12 @@ header ul {
 	vertical-align: middle;
 }
 
+#username{
+	font-size: 1.3em;
+    text-align: center;
+    font-weight: bold;
+}
+
 header ul li {
 	flex-grow: 1;
 	padding: 0 10px;
@@ -62,7 +68,7 @@ figure{
 
 .left img {
     width: 70%;
-    margin: 37px;
+    margin: 37px 37px 2px 37px;
 }
 
 #user-info { padding: 0 20px; }
