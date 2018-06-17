@@ -10,7 +10,7 @@ h1 {
 .container {
 	display: block;
 	width: 80%;
-	height: 100vh;
+	height: 90vh;
 	margin: 0 auto;
 	background: rgba(255, 255, 255, 0.7);
 }
