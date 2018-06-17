@@ -8,6 +8,8 @@
     <link rel="stylesheet" type="text/css" href="../assets/styles/login.css">
     <link rel="stylesheet" type="text/css" href="../assets/styles/styles.css">
     <link rel="stylesheet" type="text/css" href="../assets/styles/buttons.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="../assets/javascript/register.js"></script>
 </head>
 
 <body>
@@ -17,11 +19,12 @@
                 <a class="button login transp" href="login.html">Вход</a>
                 <a class="button register transp" href="register.html">Регистрирай се</a>
             </nav>
-            <form method="POST" action="login.html">
+            <form method="POST" action="">
                 <input id="username" name="username" type="text" placeholder="Потребителско име" required="required">
                 <input id="email" name="email" type="text" placeholder="E-mail" required="required">
                 <input id="passwd" name="passwd" type="password" placeholder="Парола" required="required">
-                <input class="button" type="submit" name="submit" value="Регистрирай се">
+                <p style="color:green; font-weight:bold; display:none">Вие се регистрирахте успешно!</p>
+                <input class="button" type="submit" name="submit" value="Регистрирай се" id='register'>
             </form>
             <a id="guest" href="filterDesktop.html">Влез като гост</a>
             </nav>

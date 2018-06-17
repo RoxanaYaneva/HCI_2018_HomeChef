@@ -45,7 +45,7 @@ input {
 
 #loginDiv input:nth-of-type(3) { margin-top: 50px; }
 
-#registerDiv input:nth-of-type(4) { margin-top: 50px; }
+#registerDiv input:nth-of-type(4) { margin-top: 40px; }
 
 #loginDiv input:first-child, #registerDiv input:first-child { margin-top: 70px; }
 
