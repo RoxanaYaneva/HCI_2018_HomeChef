@@ -1,0 +1,41 @@
+h1 {
+	margin-bottom:150px;
+	padding-top:60px;
+	font-size:40px;
+	text-transform:uppercase;
+	text-align:center;
+	color:green;
+}
+
+.container {
+	display: block;
+	width: 80%;
+	height: 100vh;
+	margin: 0 auto;
+	background: rgba(255, 255, 255, 0.7);
+}
+
+
+figcaption {
+	margin:0px 30px 0px 0px;
+	text-align:center;
+	font-size:26px;
+	color:black;
+}
+
+img {
+	height:200px;
+	width:200px;	
+}
+
+article {
+    display: table-cell;
+    margin: 0px 10px;
+    text-align: center;
+    font-size: 1.3em;
+}
+
+article:hover{
+	background-color: rgb(210, 255, 183);
+	font-weight: bold;
+}
