@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
 <head>
 	<title>Участвай в състезание</title>
 	<meta charset="utf-8">
@@ -10,19 +11,37 @@
 	<link rel="stylesheet" type="text/css" href="../assets/styles/buttons.css">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 	<script src="../assets/javascript/recipeController.js"></script>
+	<script src="../assets/javascript/guest.js"></script>
 </head>
+
 <body>
-		<header>
-				<ul>
-					<li><a href="account.html">Моят профил</a></li>
-					<li><a href="addRecipe.html">Добави рецепта</a></li>
-					<li><a href="filterDesktop.html">Търси рецепта</a></li>
-					<li><a href="competition.html">Участвай в конкурс</a></li>
-					<li><a href="login.html">Изход</a></li>
-				</ul>
-			</header>
+	<header>
+		<ul>
+			<li class="logged">
+				<a href="account.html">Моят профил</a>
+			</li>
+			<li class="logged">
+				<a href="addRecipe.html">Добави рецепта</a>
+			</li>
+			<li class="guest">
+				<a href="login.html">Вход</a>
+			</li>
+			<li class="guest">
+				<a href="register.html">Регистрация</a>
+			</li>
+			<li>
+				<a href="filterDesktop.html">Търси рецепта</a>
+			</li>
+			<li class="logged">
+				<a href="competition.html">Участвай в конкурс</a>
+			</li>
+			<li class="logged">
+				<a href="login.html" class="logout">Изход</a>
+			</li>
+		</ul>
+	</header>
 	<main class="container">
-	<!-- 	<div class="head">
+		<!-- 	<div class="head">
 			<img id="icon" src="../assets/images/recipe.png">
 		</div> -->
 		<form method="GET" ation="competition.html">
@@ -41,16 +60,18 @@
 					<option value="...">...</option>
 				</select>
 				<div class='addInfo'>
-						<p>
-							Честито!
+					<p>
+						Честито!
 						</br>
-						 Вече участвате в конкурса <span style="color:black"></span>!
-						</p>
-					</div>
+						Вече участвате в конкурса
+						<span style="color:black"></span>!
+					</p>
+				</div>
 				<input class="button" id='competition' type="submit" name="submit" value="Участвай в конкурс">
 			</fieldset>
 		</form>
 	</main>
 	<div class="bottom"></div>
 </body>
+
 </html>

@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
 <head>
 	<title>Начална страница</title>
 	<meta charset="utf-8">
@@ -8,10 +9,13 @@
 	<link rel="stylesheet" type="text/css" href="../assets/styles/styles.css">
 	<link rel="stylesheet" type="text/css" href="../assets/styles/buttons.css">
 </head>
+
 <body>
 	<header>
 		<nav id="back-btn">
-			<a href="../html/homeScreen.html"><img src="../assets/images/back.png"></a>
+			<a href="../html/homeScreen.html">
+				<img src="../assets/images/back.png">
+			</a>
 		</nav>
 	</header>
 	<main class="container">
@@ -20,7 +24,7 @@
 				<legend>Потърсете рецепта</legend>
 				<img id="icon" src="../assets/images/recipe.png">
 				<label for="search">Търси</label>
-	           	<input class="input" name="search" type="text" placeholder="Име на ястие, продукти">
+				<input class="input" name="search" type="text" placeholder="Име на ястие, продукти">
 				<label for="dish_kind">Вид ястие</label>
 				<select class="input" name="dish_kind" id="dish_kind" placeholder="Избери">
 					<option value="main_dish">Основни ястия</option>
@@ -37,16 +41,17 @@
 					<option value="30min"> 30 мин</option>
 					<option value="45min"> 45 мин</option>
 					<option value="60+min"> 60+ мин</option>
-				</select>	
+				</select>
 				<label for="complexity">Сложност</label>
 				<select class="input" name="comlexity" id="complexity" placeholder="Избери">
 					<option value="easy"> лесно</option>
 					<option value="normal"> средно</option>
 					<option value="hard"> трудно</option>
-				</select>	
-				<input class="button" type="submit" name="search" value="Търси">					
-			</fieldset>	
+				</select>
+				<input class="button" type="submit" name="search" value="Търси">
+			</fieldset>
 		</form>
-	</main>	
+	</main>
 </body>
+
 </html>

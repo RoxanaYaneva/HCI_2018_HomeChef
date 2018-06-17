@@ -99,7 +99,7 @@ $(function () {
             if (name != '' && quantity != '') {
                 var product = products.find(prod => prod.name === name);
                 var calories = product.calories * (quantity / 100);
-                $("#result").html("Калории за " + quantity + " гр. " + name + " : <span id='cal'>" + calories + "</span> kcal");
+                $("#result").html("Калории за " + quantity + " гр. " + name + " : <span id='cal'>" + calories.toFixed(2) + "</span> kcal");
                 $("#result").show();
                 $("#hidden").hide();
                 $('#product').val('');
