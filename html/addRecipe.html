@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
 <head>
 	<title>Добави рецепта</title>
 	<meta charset="utf-8">
@@ -10,19 +11,37 @@
 	<link rel="stylesheet" type="text/css" href="../assets/styles/buttons.css">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 	<script src="../assets/javascript/recipeController.js"></script>
+	<script src="../assets/javascript/guest.js"></script>
 </head>
+
 <body>
-		<header>
-				<ul>
-					<li><a href="account.html">Моят профил</a></li>
-					<li><a href="addRecipe.html">Добави рецепта</a></li>
-					<li><a href="filterDesktop.html">Търси рецепта</a></li>
-					<li><a href="competition.html">Участвай в конкурс</a></li>
-					<li><a href="login.html">Изход</a></li>
-				</ul>
-			</header>
+	<header>
+		<ul>
+			<li class="logged">
+				<a href="account.html">Моят профил</a>
+			</li>
+			<li class="logged">
+				<a href="addRecipe.html">Добави рецепта</a>
+			</li>
+			<li class="guest">
+				<a href="login.html">Вход</a>
+			</li>
+			<li class="guest">
+				<a href="register.html">Регистрация</a>
+			</li>
+			<li>
+				<a href="filterDesktop.html">Търси рецепта</a>
+			</li>
+			<li class="logged">
+				<a href="competition.html">Участвай в конкурс</a>
+			</li>
+			<li class="logged">
+				<a href="login.html" class="logout">Изход</a>
+			</li>
+		</ul>
+	</header>
 	<main class="container">
-	<!-- 	<div class="head">
+		<!-- 	<div class="head">
 			<img id="icon" src="../assets/images/recipe.png">
 		</div> -->
 		<form method="GET" action="../html/addRecipe.html">
@@ -31,7 +50,7 @@
 				<div class="info">
 					<div class="left">
 						<label for="name">Име на рецептата</label>
-			           	<input name="name" type="text" required="required" id="name">
+						<input name="name" type="text" required="required" id="name">
 						<label for="author">Автор</label>
 						<input name="author" type="text" required="required" id="author">
 						<label for="dish_kind">Вид ястие</label>
@@ -50,7 +69,7 @@
 							<option value="30min">30 мин</option>
 							<option value="45min">45 мин</option>
 							<option value="60+min">60+ мин</option>
-						</select>	
+						</select>
 						<label for="complexity">Сложност</label>
 						<select name="comlexity" id="complexity" placeholder="Избери">
 							<option value="easy">лесно</option>
@@ -63,14 +82,14 @@
 						<div class="add">
 							<a id="addImageBtn" class="button image">Добави снимка</a>
 							<script type="text/javascript">
-								$("#addImageBtn").click(function(e) {
+								$("#addImageBtn").click(function (e) {
 									$("#addImage").click();
 								});
 							</script>
 							<input id="addImage" type="file" name="image" placeholder="Photo" required="" capture>
 							<a id="addVideoBtn" class="button video">Добави видео</a>
 							<script type="text/javascript">
-								$("#addVideoBtn").click(function(e) {
+								$("#addVideoBtn").click(function (e) {
 									$("#addVideo").click();
 								});
 							</script>
@@ -91,11 +110,11 @@
 					<p id="err">
 						Моля, попълнете всички полета!
 					</p>
-					
+
 				</div>
 				<div class='addInfo'>
 					<p id="success">
-							Вашата рецепта беше добавена успешно!
+						Вашата рецепта беше добавена успешно!
 					</p>
 				</div>
 				<div class="buttons">
@@ -106,4 +125,5 @@
 		</form>
 	</main>
 </body>
+
 </html>

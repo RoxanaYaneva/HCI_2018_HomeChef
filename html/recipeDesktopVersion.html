@@ -10,25 +10,32 @@
 	<link rel="stylesheet" type="text/css" href="../assets/styles/styles.css">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 	<script src="../assets/javascript/recipeController.js"></script>
+	<script src="../assets/javascript/guest.js"></script>
 </head>
 
 <body>
 	<header>
 		<ul>
-			<li>
+			<li class="logged">
 				<a href="account.html">Моят профил</a>
 			</li>
-			<li>
+			<li class="logged">
 				<a href="addRecipe.html">Добави рецепта</a>
+			</li>
+			<li class="guest">
+				<a href="login.html">Вход</a>
+			</li>
+			<li class="guest">
+				<a href="register.html">Регистрация</a>
 			</li>
 			<li>
 				<a href="filterDesktop.html">Търси рецепта</a>
 			</li>
-			<li>
+			<li class="logged">
 				<a href="competition.html">Участвай в конкурс</a>
 			</li>
-			<li>
-				<a href="login.html">Изход</a>
+			<li class="logged">
+				<a href="login.html" class="logout">Изход</a>
 			</li>
 		</ul>
 	</header>
@@ -86,10 +93,10 @@
 			<textarea id='comment' placeholder="Добави коментар" maxlength="500"></textarea>
 			<input class="button" type="submit" name="submit" value="Изпрати" id='commentButton'>
 			<div class='addInfo'>
-					<p>
+				<p>
 					Вашият коментар беше добавен успешно!
-					</p>
-				</div>
+				</p>
+			</div>
 		</div>
 		<h2>Oще десерти</h2>
 		<div class="more-of-this">
