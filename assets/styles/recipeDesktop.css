@@ -9,7 +9,7 @@ body {
 }
 
 .method, .larger, .title, ul.ingredients, h2, li {
-	font-family: 'Hoefler Text', Georgia, serif;
+	font-family: Arial, sans-serif;
 }
 
 .title {
