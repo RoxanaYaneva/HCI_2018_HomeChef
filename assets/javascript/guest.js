@@ -1,7 +1,4 @@
 $(function(){
-    $("#login").on("click", function(){
-        sessionStorage.setItem("loggedUser", true);
-    })
 
     $("#guest").on("click", function(){
         sessionStorage.clear();
@@ -9,7 +6,7 @@ $(function(){
     })
 
     $(".logout").on("click", function(){
-        sessionStorage.clear();
+        userStorage.logout();
     })
 
     if(sessionStorage.getItem("loggedUser")){

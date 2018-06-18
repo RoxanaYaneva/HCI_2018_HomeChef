@@ -9,7 +9,10 @@
 	<link rel="stylesheet" type="text/css" href="../assets/styles/styles.css">
 	<link rel="stylesheet" type="text/css" href="../assets/styles/buttons.css">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+	<script src="../assets/javascript/userService.js"></script>
+	<script src="../assets/javascript/loginRegisterController.js"></script>
 	<script src="../assets/javascript/guest.js"></script>
+	
 </head>
 
 <body>
@@ -26,9 +29,10 @@
 				<a class="button login transp" href="login.html">Вход</a>
 				<a class="button register transp" href="register.html">Регистрирай се</a>
 			</nav>
-			<form method="POST" action="account.html">
-				<input id="username" name="username" type="text" placeholder="Потребителско име" required="required">
-				<input id="passwd" name="passwd" type="password" placeholder="Парола" required="required">
+			<form method="POST" action="">
+				<input id="username" name="username" type="text" placeholder="Потребителско име" >
+				<input id="passwd" name="passwd" type="password" placeholder="Парола">
+				<p style="color:red; font-weight:bold; display:none">Невалидно потребителско име или парола!</p>
 				<input class="button" type="submit" name="submit" value="Bход" id="login">
 			</form>
 			<a id="forget" href="">Забравена парола?</a>

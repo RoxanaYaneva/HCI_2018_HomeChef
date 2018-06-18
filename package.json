@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/RoxanaYaneva/HCI_2018_HomeChef#readme",
   "dependencies": {
+    "handlebars": "^4.0.11",
     "jquery": "^3.3.1"
   }
 }
