@@ -7,7 +7,6 @@ height: 100%;
 border:3px solid green;
 }
 
-
 #foundRecipes figure:hover{
     background-color:rgb(210, 255, 183);
 }
