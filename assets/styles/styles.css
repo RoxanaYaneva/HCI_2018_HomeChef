@@ -15,6 +15,15 @@ header nav {
 	padding: 0;
 }
 
+legend {
+    font-size: 100%;
+    color: #45a316;
+    font-family: 'Hoefler Text', Georgia, serif;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+
 #back-btn {
 	position: fixed;
 	top: 0;

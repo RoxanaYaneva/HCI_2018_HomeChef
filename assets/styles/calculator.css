@@ -31,12 +31,7 @@ fieldset {
 	font-size: 190%;
 }
 
-legend {
-	font-size: 100%;
-	color: black;
-	font-weight: bold;
-	margin: 5px 10px;
-}
+
 
 label {
 	display: block;
