@@ -7,20 +7,18 @@ var userStorage = (function () {
         this.id = UserStorage.nextId++;
         this.myrecipes = [];
         this.favorites = [];
+        this.competitions=[];
         this.registered=Date.now();
     }
 
     function saveChanges() {
-        localStorage.setItem('users', JSON.stringify(this._users));
-       /*  var products = productStorage.getAll();
-        localStorage.setItem('recipes', JSON.stringify(products)); */
-
+        sessionStorage.setItem('users', JSON.stringify(this._users));
     }
 
     function UserStorage() {
 
-        if (localStorage.getItem('users') != null)
-            this._users = JSON.parse(localStorage.getItem('users'));
+        if (sessionStorage.getItem('users') != null)
+            this._users = JSON.parse(sessionStorage.getItem('users'));
         else
             this._users = [];
 
@@ -41,7 +39,7 @@ var userStorage = (function () {
         if (!isAlreadyRegistered) {
             var newUser = new User(username, password, email);
             this._users.push(newUser);
-            localStorage.setItem('users', JSON.stringify(this._users));
+            sessionStorage.setItem('users', JSON.stringify(this._users));
             return true;
         }
 
@@ -67,7 +65,7 @@ var userStorage = (function () {
     UserStorage.prototype.logout = function () {
         this.loggedUserId = 0;
         sessionStorage.clear();
-        localStorage.setItem('users', JSON.stringify(this._users));
+        sessionStorage.setItem('users', JSON.stringify(this._users));
     };
 
 
@@ -81,7 +79,7 @@ var userStorage = (function () {
                 return false;
             }
             this._users[index].favorites.push(product);
-            localStorage.setItem('users', JSON.stringify(this._users));
+            sessionStorage.setItem('users', JSON.stringify(this._users));
             sessionStorage.setItem('loggedUser', JSON.stringify(this._users[index]));
             return true;
 
@@ -99,7 +97,7 @@ var userStorage = (function () {
             }
             var index = user.favorites.findIndex(p => p.id == product.id);
             user.favorites.splice(index, 1);
-            localStorage.setItem('users', JSON.stringify(this._users));
+            sessionStorage.setItem('users', JSON.stringify(this._users));
             sessionStorage.setItem('loggedUser', JSON.stringify(user));
             return true;
         }
