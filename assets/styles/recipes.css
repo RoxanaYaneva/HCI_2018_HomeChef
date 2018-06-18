@@ -7,11 +7,7 @@ height: 100%;
 border:3px solid green;
 }
 
-#foundRecipes figure:first-of-type{
-    position: relative;
-    height: 214px;
-    top: -20px;
-}
+
 #foundRecipes figure:hover{
     background-color:rgb(210, 255, 183);
 }
@@ -24,9 +20,20 @@ border:3px solid green;
 #foundRecipes { margin: 0; }
 
 #foundRecipes a{
+    font-size: 27px;
     color:black;
 }
 
 figcaption{
     text-align:center;
+}
+
+figcaption span{
+    color: green;
+    font-size: 16px;
+    border-right: 2px solid green;
+    padding: 6px;
+}
+figcaption span:last-child{
+    border:none;
 }
