@@ -21,9 +21,7 @@ border:3px solid green;
     border-radius: 20px;
 }
 
-#foundRecipes{
-    margin:1em;
-}
+#foundRecipes { margin: 0; }
 
 #foundRecipes a{
     color:black;
