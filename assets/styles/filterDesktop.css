@@ -77,12 +77,7 @@ h2 {
 }
 
 #filter  {
-	background-image: url("../images/search.png");
-	background-repeat: no-repeat;
-    background-position: top; 
-    background-size: 40px;
-    background-position: 100% 0;
-	height: 45px;
+	height: 40px;
 	display: block;
 	width: 84%;
 	font-size: 130%;
